@@ -14,16 +14,16 @@
 	"version"    : "1.0.2",
 	"variations" : [
 		{
-			"description" : "Generate citations and create bibliographies in your documents (compatible with ONLYOFFICE cloud).",
+			"description" : "Generate citations and create bibliographies in your documents (compatible with UNIVAULTOFFICE cloud).",
 			"descriptionLocale": {
-				"ru": "Добавляйте библиографии в свои документы (требуется облако ONLYOFFICE).",
-				"fr": "Générez des citations et créez des bibliographies dans vos documents (compatible avec le cloud ONLYOFFICE).",
-				"es": "Genere citas y cree bibliografías en sus documentos (compatible con la nube de ONLYOFFICE).",
-				"pt-BR": "Gere citações e crie bibliografias em seus documentos (compatível com a nuvem ONLYOFFICE).",
-				"de": "Generieren Sie Zitate und erstellen Sie Bibliografien in Ihren Dokumenten (kompatibel mit ONLYOFFICE in der Cloud).",
-				"sq-AL": "Krijoni citime dhe krijoni bibliografi në dokumentet tuaja (kompatibile me renë ONLYOFFICE).",
-				"sr-Cyrl-RS": "Генеришите цитате и креирајте библиографије у вашим документима (компатибилно са ONLYOFFICE облаком).",
-				"sr-Latn-RS": "Generišite citate i kreirajte bibliografije u vašim dokumentima (kompatibilno sa ONLYOFFICE oblakom)."
+				"ru": "Добавляйте библиографии в свои документы (требуется облако UNIVAULTOFFICE).",
+				"fr": "Générez des citations et créez des bibliographies dans vos documents (compatible avec le cloud UNIVAULTOFFICE).",
+				"es": "Genere citas y cree bibliografías en sus documentos (compatible con la nube de UNIVAULTOFFICE).",
+				"pt-BR": "Gere citações e crie bibliografias em seus documentos (compatível com a nuvem UNIVAULTOFFICE).",
+				"de": "Generieren Sie Zitate und erstellen Sie Bibliografien in Ihren Dokumenten (kompatibel mit UNIVAULTOFFICE in der Cloud).",
+				"sq-AL": "Krijoni citime dhe krijoni bibliografi në dokumentet tuaja (kompatibile me renë UNIVAULTOFFICE).",
+				"sr-Cyrl-RS": "Генеришите цитате и креирајте библиографије у вашим документима (компатибилно са UNIVAULTOFFICE облаком).",
+				"sr-Latn-RS": "Generišite citate i kreirajte bibliografije u vašim dokumentima (kompatibilno sa UNIVAULTOFFICE oblakom)."
 			},
 			"url"    : "index.html",
 			"icons"  : [ "resources/img/icon.png", "resources/img/icon@2x.png" ],

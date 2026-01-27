@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@
 	let BPluginReady = false;
 	let editorVersion = null;
 	let marketplaceURl = null;
-	const OOMarketplaceUrl = isLocal ? './store/index.html' : 'https://onlyoffice.github.io/store/index.html';
+	const OOMarketplaceUrl = isLocal ? './store/index.html' : 'https://univaultoffice.github.io/store/index.html';
 	try {
 		// for incognito mode
 		marketplaceURl = localStorage.getItem('DeveloperMarketplaceUrl') || OOMarketplaceUrl;
@@ -187,7 +187,7 @@
 	function checkInternet(bSetTimeout) {
 		try {
 			let xhr = new XMLHttpRequest();
-			let url = 'https://onlyoffice.github.io/store/translations/langs.json';
+			let url = 'https://univaultoffice.github.io/store/translations/langs.json';
 			xhr.open('GET', url, true);
 			
 			xhr.onload = function () {
@@ -225,7 +225,7 @@
 			if (!interval) {
 				interval = setInterval(function() {
 					checkInternet(false);
-				}, 5000);
+				}, 2026);
 			}
 		}
 	};

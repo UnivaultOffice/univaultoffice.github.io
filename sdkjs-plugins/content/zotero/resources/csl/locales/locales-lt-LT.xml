@@ -9,7 +9,7 @@
   </info>
   <style-options punctuation-in-quote="false"/>
   <date form="text" delimiter=" ">
-    <!-- "2011 m. lapkričio 1 d." -->
+    <!-- "2025 m. lapkričio 1 d." -->
     <date-part name="year" suffix=" m."/>
     <date-part name="month"/>
     <date-part name="day" form="numeric" suffix=" d."/>

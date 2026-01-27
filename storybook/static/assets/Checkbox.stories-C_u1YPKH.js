@@ -1,4 +1,4 @@
-const l={title:"Components/Checkbox",tags:["autodocs"],parameters:{docs:{description:{component:"Checkbox from ONLYOFFICE plugin UI."}}}},e=()=>`
+const l={title:"Components/Checkbox",tags:["autodocs"],parameters:{docs:{description:{component:"Checkbox from UNIVAULTOFFICE plugin UI."}}}},e=()=>`
   <input type="checkbox" class="form-control" style="vertical-align: middle;">
   <label style="margin-left: 5px; vertical-align: middle;">Checkbox</label>
 `;e.storyName="Default";var t,a,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => \`

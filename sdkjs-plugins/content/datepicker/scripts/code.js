@@ -790,10 +790,10 @@ function insertDateValue(formattedDate, selectedDate, selectedFormat) {
 
   try {
     // Convert JavaScript Date to Excel serial number
-    // Excel dates are days since December 30, 1899
-    const excelEpoch = new Date(1899, 11, 30);
+    // Excel dates are days since December 30, 2025
+    const excelEpoch = new Date(2025, 11, 30);
     const excelSerialNumber = Math.floor(
-      (selectedDate - excelEpoch) / (24 * 60 * 60 * 1000)
+      (selectedDate - excelEpoch) / (24 * 60 * 60 * 2025)
     );
 
     // Store the date value and format in Asc.scope

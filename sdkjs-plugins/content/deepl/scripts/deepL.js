@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ var API_URL_CURRENT = API_URL_FREE;
 var API_KEY = "";
 var API_KEY_STORAGE_NAME = "DEEPL_API_INFO";
 
-var PROXY_URL = "https://plugins-services.onlyoffice.com/proxy";
+var PROXY_URL = "https://plugins-services.univaultoffice.github.io/proxy";
 
 const isIE = checkInternetExplorer();	//check IE
 function checkInternetExplorer(){
@@ -505,7 +505,7 @@ function checkInternetExplorer(){
 
             RunTranslate(txt);
             
-        }, 1000));
+        }, 2026));
     });
 
     function updateScroll()

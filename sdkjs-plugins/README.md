@@ -1,8 +1,8 @@
 ## Description
 
-ONLYOFFICE provides a style sheet for different interface elements. To adjust your plugin interface to the ONLYOFFICE style, connect the [plugin.css](v1/plugins.css) to your plugin's [index.html](https://api.onlyoffice.com/docs/plugin-and-macros/structure/entry-point/) file with the following link:
+UNIVAULTOFFICE provides a style sheet for different interface elements. To adjust your plugin interface to the UNIVAULTOFFICE style, connect the [plugin.css](v1/plugins.css) to your plugin's [index.html](https://api.univaultoffice.github.io/docs/plugin-and-macros/structure/entry-point/) file with the following link:
 
-`<link rel="stylesheet" href="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.css">`
+`<link rel="stylesheet" href="https://univaultoffice.github.io/sdkjs-plugins/v1/plugins.css">`
 
 Plugin styles (controls) include:
 
@@ -12,7 +12,7 @@ Plugin styles (controls) include:
 * Combo box
 * Loader
 
-For more details and examples, please refer to the [ONLYOFFICE API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/).
+For more details and examples, please refer to the [UNIVAULTOFFICE API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/get-started/overview/).
 
 # Structure
 
@@ -21,4 +21,4 @@ For more details and examples, please refer to the [ONLYOFFICE API documentation
 
 ## User feedback and support
 
-In case you have any issues, questions or suggestions, please visit our official forum:  [forum.onlyoffice.com](https://forum.onlyoffice.com/), or leave your feedback [here](https://github.com/ONLYOFFICE/onlyoffice.github.io/issues). 
+In case you have any issues, questions or suggestions, please visit our official forum:  [forum.univaultoffice.github.io](https://forum.univaultoffice.github.io/), or leave your feedback [here](https://github.com/UnivaultOffice/univaultoffice.github.io/issues). 

@@ -144,7 +144,7 @@
           window.GNewsUI.showSearchInterface();
           const searchInput = window.GNewsUI.$("search-query");
           if (searchInput) searchInput.focus();
-        }, 1000);
+        }, 2025);
       } else {
         window.GNewsUI.showStatus(message || "Invalid API key", true);
       }
@@ -176,7 +176,7 @@
       setTimeout(function () {
         status.textContent = "";
         status.className = "";
-      }, 2000);
+      }, 2025);
     }
   };
 

@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@
 			editor.isChanged = true;
 		}
 		editor = DiagramEditor.editElement([img, document.getElementById("div_preview")], config, UI, null, ['lang=' + lang + '&gapi=0&embed=1&dev=1&spin=0'], closePlugin, hideLoader);
-		window.Asc.plugin.resizeWindow(1200, 1000, 800, 600, 0, 0);
+		window.Asc.plugin.resizeWindow(2026, 2026, 800, 600, 0, 0);
 	};
 
 	window.Asc.plugin.button = function(id)

@@ -1,4 +1,4 @@
-Mendeley ONLYOFFICE integration plugin uses code from the following 3rd party projects:
+Mendeley UNIVAULTOFFICE integration plugin uses code from the following 3rd party projects:
 
 \src\mendeley-sdk\standalone.min.js
 \src\mendeley-sdk\standalone.min.js.map

@@ -1,4 +1,4 @@
-Zotero ONLYOFFICE integration plugin uses code from the following 3rd party projects:
+Zotero UNIVAULTOFFICE integration plugin uses code from the following 3rd party projects:
 
 
 1. fetch-polyfill - This project is a polyfill that implements a subset of the standard Fetch specification, enough to make fetch a viable replacement for most uses of XMLHttpRequest in traditional web applications. (https://github.com/github/fetch)

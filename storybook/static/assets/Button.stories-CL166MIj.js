@@ -1,4 +1,4 @@
-const x={title:"Components/Button",tags:["autodocs"],parameters:{docs:{description:{component:"Various styled buttons from ONLYOFFICE plugin UI."}}}},t=()=>`
+const x={title:"Components/Button",tags:["autodocs"],parameters:{docs:{description:{component:"Various styled buttons from UNIVAULTOFFICE plugin UI."}}}},t=()=>`
   <button class="btn-text-default" style="width:75px;">Button 1</button>
 `;t.storyName="Default Button";const e=()=>`
   <button class="btn-text-default submit primary" style="width:75px;">Button 2</button>

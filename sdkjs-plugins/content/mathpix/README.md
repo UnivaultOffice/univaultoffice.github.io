@@ -1,6 +1,6 @@
-# Mathpix Plugin for ONLYOFFICE
+# Mathpix Plugin for UNIVAULTOFFICE
 
-Convert mathematical formulas from images to editable text! This plugin allows you to easily extract mathematical formulas and text from images and insert them directly into your ONLYOFFICE documents.
+Convert mathematical formulas from images to editable text! This plugin allows you to easily extract mathematical formulas and text from images and insert them directly into your UNIVAULTOFFICE documents.
 
 ## 🌟 Key Features
 
@@ -51,7 +51,7 @@ Convert mathematical formulas from images to editable text! This plugin allows y
    - Use "Copy" to copy or "Insert" to add to document
 
 #### Important Notes
-- **When using LaTeX format, some complex mathematical expressions may need manual adjustment to work with ONLYOFFICE Document Editor**
+- **When using LaTeX format, some complex mathematical expressions may need manual adjustment to work with UNIVAULTOFFICE Document Editor**
 - Preview results before insertion to ensure accuracy
 - If recognition results are unsatisfactory, try using clearer images
 
@@ -73,7 +73,7 @@ Convert mathematical formulas from images to editable text! This plugin allows y
 
 ## 🔧 System Requirements
 
-- ONLYOFFICE Document Editor
+- UNIVAULTOFFICE Document Editor
 - Valid Mathpix API credentials
 - Internet connection
 
@@ -96,7 +96,7 @@ Convert mathematical formulas from images to editable text! This plugin allows y
 
 If you encounter issues or have suggestions:
 - Submit issues to our GitHub repository
-- Contact ONLYOFFICE support team
+- Contact UNIVAULTOFFICE support team
 
 ---
 

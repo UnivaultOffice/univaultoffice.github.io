@@ -4,7 +4,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Separator from ONLYOFFICE plugin UI.'
+        component: 'Separator from UNIVAULTOFFICE plugin UI.'
       }
     }
   }

@@ -4,7 +4,7 @@ Quickly translate the selected text into other languages.
 
 The plugin uses [Apertium](https://www.apertium.org/), a free open-source machine translation platform.
 
-Apertium is compatible with [self-hosted](https://github.com/ONLYOFFICE/DocumentServer) and [desktop](https://github.com/ONLYOFFICE/DesktopEditors) versions of ONLYOFFICE editors. It can be added to ONLYOFFICE instances manually. 
+Apertium is compatible with [self-hosted](https://github.com/UnivaultOffice/DocumentServer) and [desktop](https://github.com/UnivaultOffice/DesktopEditors) versions of UNIVAULTOFFICE editors. It can be added to UNIVAULTOFFICE instances manually. 
 
 ## How to use
 
@@ -18,7 +18,7 @@ Apertium is compatible with [self-hosted](https://github.com/ONLYOFFICE/Document
 
 ## How to install
 
-Detailed instructions can be found in [ONLYOFFICE API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/onlyoffice-docs-on-premises/).
+Detailed instructions can be found in [UNIVAULTOFFICE API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/tutorials/installing/univaultoffice-docs-on-premises/).
 
 ## Using your own service
 

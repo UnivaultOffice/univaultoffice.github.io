@@ -1,10 +1,10 @@
 ## Overview
 
-Type with your voice in ONLYOFFICE Docs.
+Type with your voice in UNIVAULTOFFICE Docs.
 
 The plugin uses [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
 
-The plugin can be installed manually to the [self-hosted](https://github.com/ONLYOFFICE/DocumentServer) version of ONLYOFFICE Docs.
+The plugin can be installed manually to the [self-hosted](https://github.com/UnivaultOffice/DocumentServer) version of UNIVAULTOFFICE Docs.
 
 ## How to use
 
@@ -16,7 +16,7 @@ The plugin can be installed manually to the [self-hosted](https://github.com/ONL
 
 ## How to install
 
-Detailed instructions can be found in [ONLYOFFICE API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/onlyoffice-docs-on-premises/).
+Detailed instructions can be found in [UNIVAULTOFFICE API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/tutorials/installing/univaultoffice-docs-on-premises/).
 
 ## Known issues
 

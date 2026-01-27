@@ -1,4 +1,4 @@
-const n={title:"Components/Label",tags:["autodocs"],parameters:{docs:{description:{component:"Various styled labels from ONLYOFFICE plugin UI."}}}},e=()=>`
+const n={title:"Components/Label",tags:["autodocs"],parameters:{docs:{description:{component:"Various styled labels from UNIVAULTOFFICE plugin UI."}}}},e=()=>`
   <label class="header">Header label</label>
 `;e.storyName="Header Label";const a=()=>`
   <label class="link">Link label</label>

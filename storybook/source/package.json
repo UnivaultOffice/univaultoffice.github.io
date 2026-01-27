@@ -1,5 +1,5 @@
 {
-  "name": "onlyoffice-storybook",
+  "name": "univaultoffice-storybook",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
     "build-storybook": "storybook build -o ../static"
   },
   "keywords": [],
-  "author": "ONLYOFFICE",
+  "author": "UNIVAULTOFFICE",
   "license": "Apache-2.0",
-  "description": "Storybook for ONLYOFFICE plugins components",
+  "description": "Storybook for UNIVAULTOFFICE plugins components",
   "devDependencies": {
     "@storybook/addon-docs": "^9.0.6",
     "@storybook/html-vite": "^9.0.6",

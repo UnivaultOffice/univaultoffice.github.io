@@ -1,8 +1,8 @@
 # Autocomplete plugin
 
-This plugin is an example of an input assistant for ONLYOFFICE editors.
+This plugin is an example of an input assistant for UNIVAULTOFFICE editors.
 
-The plugin is compatible with [self-hosted](https://github.com/ONLYOFFICE/DocumentServer) and [desktop](https://github.com/ONLYOFFICE/DesktopEditors) versions of ONLYOFFICE editors. It can be added to ONLYOFFICE instances manually.
+The plugin is compatible with [self-hosted](https://github.com/UnivaultOffice/DocumentServer) and [desktop](https://github.com/UnivaultOffice/DesktopEditors) versions of UNIVAULTOFFICE editors. It can be added to UNIVAULTOFFICE instances manually.
 
 ## How to use
 
@@ -13,13 +13,13 @@ Please note that it is the system plugin so that's OK that you can't see it in t
 
 ## How to install
 
-Detailed instructions can be found in [ONLYOFFICE API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/onlyoffice-docs-on-premises/).
+Detailed instructions can be found in [UNIVAULTOFFICE API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/tutorials/installing/univaultoffice-docs-on-premises/).
 
 ## Documentation
 
-Plugins structure and installation https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/.
+Plugins structure and installation https://api.univaultoffice.github.io/docs/plugin-and-macros/get-started/overview/.
 
-Plugins code and methods https://api.onlyoffice.com/docs/document-builder/get-started/overview/.
+Plugins code and methods https://api.univaultoffice.github.io/docs/document-builder/get-started/overview/.
 
 ## User feedback and support
 

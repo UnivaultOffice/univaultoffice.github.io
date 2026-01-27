@@ -1,4 +1,4 @@
-const c={title:"Components/Input",tags:["autodocs"],parameters:{docs:{description:{component:"Various styled inputs from ONLYOFFICE plugin UI."}}}},e=()=>`
+const c={title:"Components/Input",tags:["autodocs"],parameters:{docs:{description:{component:"Various styled inputs from UNIVAULTOFFICE plugin UI."}}}},e=()=>`
   <textarea
     style="height:45px;width: 100%;"
     class="form-control"

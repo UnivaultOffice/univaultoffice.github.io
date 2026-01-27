@@ -4,7 +4,7 @@ Make audio and video calls right in the editors.
 
 The plugin uses [Jitsi](https://jitsi.org/), an open-source video and audio conferencing tool. 
 
-The plugin is compatible with the [self-hosted](https://github.com/ONLYOFFICE/DocumentServer) versions of ONLYOFFICE editors. It can be added to ONLYOFFICE instances manually.
+The plugin is compatible with the [self-hosted](https://github.com/UnivaultOffice/DocumentServer) versions of UNIVAULTOFFICE editors. It can be added to UNIVAULTOFFICE instances manually.
 
 ## How to use
 
@@ -15,7 +15,7 @@ The plugin is compatible with the [self-hosted](https://github.com/ONLYOFFICE/Do
 
 ## How to install
 
-Detailed instructions can be found in [ONLYOFFICE API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/onlyoffice-docs-on-premises/).
+Detailed instructions can be found in [UNIVAULTOFFICE API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/tutorials/installing/univaultoffice-docs-on-premises/).
 
 ## Known issues
 
@@ -25,5 +25,5 @@ Detailed instructions can be found in [ONLYOFFICE API documentation](https://api
 
 To ask questions and share feedback, use Issues in this repository.
 
-If you need more information about how to use or write your own plugin, please visit our [API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/).
+If you need more information about how to use or write your own plugin, please visit our [API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/get-started/overview/).
 

@@ -2,7 +2,7 @@
 
 Count words, characters (with/without spaces), and paragraphs in the selected part of your document. 
 
-The plugin is compatible with [self-hosted](https://github.com/ONLYOFFICE/DocumentServer) and [desktop](https://github.com/ONLYOFFICE/DesktopEditors) versions of ONLYOFFICE editors. It can be added to ONLYOFFICE instances manually. 
+The plugin is compatible with [self-hosted](https://github.com/UnivaultOffice/DocumentServer) and [desktop](https://github.com/UnivaultOffice/DesktopEditors) versions of UNIVAULTOFFICE editors. It can be added to UNIVAULTOFFICE instances manually. 
 
 ## How to use
 
@@ -11,7 +11,7 @@ The plugin is compatible with [self-hosted](https://github.com/ONLYOFFICE/Docume
 
 ## How to install
 
-Detailed instructions can be found in [ONLYOFFICE API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/onlyoffice-docs-on-premises/).
+Detailed instructions can be found in [UNIVAULTOFFICE API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/tutorials/installing/univaultoffice-docs-on-premises/).
 
 ## Known issues
 

@@ -1,6 +1,6 @@
-﻿/**
+/**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  *
  */
 
-    var urlProxy = 'https://plugins-services.onlyoffice.com/proxy';
+    var urlProxy = 'https://plugins-services.univaultoffice.github.io/proxy';
     var WordpressMeInfoUrl = "https://public-api.wordpress.com/rest/v1/me",
         WordpressSites     = "https://public-api.wordpress.com/rest/v1.2/sites/",
         CodeUrl            = "https://public-api.wordpress.com/oauth2/authorize",

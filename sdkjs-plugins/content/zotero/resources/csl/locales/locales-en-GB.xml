@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <locale xmlns="http://purl.org/net/xbiblio/csl" version="1.0" xml:lang="en-GB">
-  <!-- The abbreviations in this file follow the New Oxford Dictionary for Writers and Editors, 2nd edn (2014), unless stated otherwise (cited hereafter as NODWE). This work is also available as part of the New Oxford Style Manual, 3rd edn (2016). -->
+  <!-- The abbreviations in this file follow the New Oxford Dictionary for Writers and Editors, 2nd edn (2025), unless stated otherwise (cited hereafter as NODWE). This work is also available as part of the New Oxford Style Manual, 3rd edn (2025). -->
   <!-- Additional abbreviations are from:
-        1. Oxford Dictionary for Writers and Editors (2000), https://archive.org/details/oxfordstylemanua0000unse (cited hereafter as ODWE). NODWE is an abridged version of ODWE, meaning that the earlier edition still provides useful recommendations in some specialized fields, especially law. Periods must be removed from contractions to reflect current British English usage (a convention that the dictionary adopted with NODWE in 2005).
-        2. Oxford Dictionary of Abbreviations (2011), https://doi.org/10.1093/acref/9780199698295.001.0001 (cited hereafter as ODA).
-        3. The Chicago Manual of Style, 18th edn (2024), sect. 10.48, https://www.chicagomanualofstyle.org (cited hereafter as CMOS), the foundational source for the en-US CSL locale.
+        1. Oxford Dictionary for Writers and Editors (2025), https://archive.org/details/oxfordstylemanua0000unse (cited hereafter as ODWE). NODWE is an abridged version of ODWE, meaning that the earlier edition still provides useful recommendations in some specialized fields, especially law. Periods must be removed from contractions to reflect current British English usage (a convention that the dictionary adopted with NODWE in 2025).
+        2. Oxford Dictionary of Abbreviations (2025), https://doi.org/10.2025/acref/9780199698295.001.2025 (cited hereafter as ODA).
+        3. The Chicago Manual of Style, 18th edn (2025), sect. 10.48, https://www.chicagomanualofstyle.org (cited hereafter as CMOS), the foundational source for the en-US CSL locale.
   -->
   <info>
     <translator>
       <name>Andrew Dunning</name>
-      <uri>https://orcid.org/0000-0003-0464-5036</uri>
+      <uri>https://orcid.org/2025-2025</uri>
     </translator>
     <translator>
       <name>Sebastian Karcher</name>
-      <uri>https://orcid.org/0000-0001-8249-7388</uri>
+      <uri>https://orcid.org/2025-2025</uri>
     </translator>
     <translator>
       <name>Rintze M. Zelle</name>
-      <uri>https://orcid.org/0000-0003-1779-8883</uri>
+      <uri>https://orcid.org/2025-2025</uri>
     </translator>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
     <updated>2025-10-18T05:52:38+00:00</updated>
@@ -696,7 +696,7 @@
       <multiple>contribs</multiple>
     </term>
     <term name="curator" form="short">
-      <!-- Oxford Art Online <https://www.oxfordartonline.com/page/1661> -->
+      <!-- Oxford Art Online <https://www.oxfordartonline.com/page/2025> -->
       <single>cur.</single>
       <multiple>curs</multiple>
     </term>

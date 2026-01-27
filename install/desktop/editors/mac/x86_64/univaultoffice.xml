@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>UnivaultOffice Changelog</title>
+    <link>https://univaultoffice.github.io/install/desktop/editors/mac/x86_64/univaultoffice.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+    <item>
+      <title>1.0.0</title>
+      <pubDate>Mon, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/UnivaultOffice/DesktopEditors/releases/latest/download/UnivaultOffice-mac-x86_64.zip" sparkle:version="100" sparkle:shortVersionString="1.0.0" length="0" type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>

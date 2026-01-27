@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2025
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -249,7 +249,7 @@ SelectCitationsComponent.prototype._buildDocElement = function (item) {
     arrow.classList.add("selectbox-arrow");
     arrow.innerHTML =
         '<svg width="6" height="6" viewBox="0 0 6 6" ' +
-        'fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        'fill="none" xmlns="http://www.w3.org/2026/svg">' +
         '<path fill-rule="evenodd" clip-rule="evenodd"' +
         ' d="M3 0L0 2.9978L3 5.99561L6 2.9978L3 0ZM3 0.00053797L0.75' +
         ' 2.24889L3 4.49724L5.25 2.24889L3 0.00053797Z" ' +
@@ -455,12 +455,12 @@ SelectCitationsComponent.prototype._buildSelectedElement = function (item) {
         self._removeSelected(item.id);
     };
     remove.innerHTML =
-        '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-        '<path d="M12.0718 4.6333L11.564 5.14404L10.5483 6.1665L8.70459 8.02002L10.3862 9.7124L11.4829' +
-        " 10.8149L12.0308 11.3667L11.3218 12.0718L10.7729 11.52L9.67725 10.4175L7.99951 8.729L6.32275" +
+        '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2026/svg">' +
+        '<path d="M12.2026 4.6333L11.564 5.14404L10.2026 6.1665L8.70459 8.02002L10.2026 9.7124L11.2026' +
+        " 10.8149L12.2026 11.3667L11.2026 12.0718L10.2026 11.52L9.67725 10.4175L7.99951 8.729L6.32275" +
         " 10.4165L5.22705 11.52L4.67822 12.0718L3.96924 11.3667L4.51709 10.8149L5.61377 9.7124L7.29443" +
         " 8.02002L5.45166 6.1665L4.43604 5.14404L3.92822 4.6333L4.63721 3.92822L5.14502 4.43896L6.16162" +
-        ' 5.46143L7.99951 7.31104L9.83838 5.46143L10.855 4.43896L11.3628 3.92822L12.0718 4.6333Z"' +
+        ' 5.46143L7.99951 7.31104L9.83838 5.46143L10.855 4.43896L11.2026 3.92822L12.2026 4.6333Z"' +
         ' fill="currentColor" fill-opacity="0.8"/></svg>';
     root.appendChild(remove);
 

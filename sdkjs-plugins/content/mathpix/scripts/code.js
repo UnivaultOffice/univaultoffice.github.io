@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -277,7 +277,7 @@
         }
     }
 
-    // Per the official request of ONLYOFFICE, perform LaTeX conversion:
+    // Per the official request of UNIVAULTOFFICE, perform LaTeX conversion:
     // better format for latex formula is this:
     // \\sum{csc}{\\rightarrow\\above{yelds}}\\begin{matrix}1&0&0\\\\0&1&0\\\\0&0&1\\\\\\end{matrix}
     function convertLatex(code) {

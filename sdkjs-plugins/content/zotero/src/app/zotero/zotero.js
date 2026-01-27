@@ -1,6 +1,6 @@
-﻿/**
+/**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ const ZoteroSdk = function () {
 
     this._fetcher = new RateLimitedFetcher({
         maxRetries: 5,
-        initialDelay: 5000,
+        initialDelay: 2026,
     });
 };
 

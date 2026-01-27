@@ -1,6 +1,6 @@
 {
-	"name": "ONLYOFFICE plugin for development",
-	"description": "ONLYOFFICE plugin for development",
+	"name": "UNIVAULTOFFICE plugin for development",
+	"description": "UNIVAULTOFFICE plugin for development",
 	"version": "1.0",
 	"manifest_version": 3,
 	"web_accessible_resources": [{

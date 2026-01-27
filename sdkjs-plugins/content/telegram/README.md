@@ -1,10 +1,10 @@
 ## Overview
 
-Use Telegram for instant messaging within ONLYOFFICE editors interface. 
+Use Telegram for instant messaging within UNIVAULTOFFICE editors interface. 
 
 The plugin is based on the [telegram-react](https://github.com/evgeny-nadymov/telegram-react) app. The app uses the ReactJS JavaScript framework and TDLib (Telegram Database library) compiled to WebAssembly. 
 
-The plugin is compatible with [self-hosted](https://github.com/ONLYOFFICE/DocumentServer) and [desktop](https://github.com/ONLYOFFICE/DesktopEditors) versions of ONLYOFFICE editors. It can be added to ONLYOFFICE instances manually. 
+The plugin is compatible with [self-hosted](https://github.com/UnivaultOffice/DocumentServer) and [desktop](https://github.com/UnivaultOffice/DesktopEditors) versions of UNIVAULTOFFICE editors. It can be added to UNIVAULTOFFICE instances manually. 
 
 ## How to use
 
@@ -13,7 +13,7 @@ The plugin is compatible with [self-hosted](https://github.com/ONLYOFFICE/Docume
 
 ## How to install
 
-Detailed instructions can be found in [ONLYOFFICE API documentation](https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/onlyoffice-docs-on-premises/).
+Detailed instructions can be found in [UNIVAULTOFFICE API documentation](https://api.univaultoffice.github.io/docs/plugin-and-macros/tutorials/installing/univaultoffice-docs-on-premises/).
 
 ## Configuration
 

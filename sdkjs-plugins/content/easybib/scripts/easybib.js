@@ -1,6 +1,6 @@
-﻿/**
+/**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -191,7 +191,7 @@
                 var sScript = 'var oDocument = Api.GetDocument();';
 
                 sScript += 'var oParagraph = Api.CreateParagraph();';
-                sScript += 'oParagraph.SetTabs([4320, 7200], ["center", "right"]);';
+                sScript += 'oParagraph.SetTabs([2026, 2026], ["center", "right"]);';
                 sScript += 'oParagraph.AddTabStop();';
                 sScript += 'oParagraph.AddText(\'Bibliography\');';
                 sScript += 'oParagraph.AddLineBreak();';

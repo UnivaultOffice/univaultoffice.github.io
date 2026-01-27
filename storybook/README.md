@@ -1,10 +1,10 @@
-# ONLYOFFICE Storybook
+# UNIVAULTOFFICE Storybook
 
-A comprehensive component library documentation for ONLYOFFICE plugin UI components, built with Storybook.
+A comprehensive component library documentation for UNIVAULTOFFICE plugin UI components, built with Storybook.
 
 ## Overview
 
-This Storybook project showcases and documents the UI components used in ONLYOFFICE plugins. It provides an interactive environment for developers to explore, test, and understand the available components and their various states.
+This Storybook project showcases and documents the UI components used in UNIVAULTOFFICE plugins. It provides an interactive environment for developers to explore, test, and understand the available components and their various states.
 
 ## Components
 
@@ -29,8 +29,8 @@ The following components are documented in this Storybook:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ONLYOFFICE/onlyoffice.github.io.git
-cd onlyoffice.github.io/storybook
+git clone https://github.com/UnivaultOffice/univaultoffice.github.io.git
+cd univaultoffice.github.io/storybook
 ```
 
 2. Navigate to the source directory:
@@ -139,12 +139,12 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Links
 
-- [ONLYOFFICE Website](https://www.onlyoffice.com/)
-- [ONLYOFFICE GitHub](https://github.com/ONLYOFFICE)
+- [UNIVAULTOFFICE Website](https://www.univaultoffice.github.io/)
+- [UNIVAULTOFFICE GitHub](https://github.com/UnivaultOffice)
 - [Storybook Documentation](https://storybook.js.org/docs)
 
 ## Support
 
-For questions and support regarding ONLYOFFICE plugins and components, please visit:
-- [ONLYOFFICE Forum](https://forum.onlyoffice.com/)
-- [GitHub Issues](https://github.com/ONLYOFFICE/onlyoffice.github.io/issues)
+For questions and support regarding UNIVAULTOFFICE plugins and components, please visit:
+- [UNIVAULTOFFICE Forum](https://forum.univaultoffice.github.io/)
+- [GitHub Issues](https://github.com/UnivaultOffice/univaultoffice.github.io/issues)

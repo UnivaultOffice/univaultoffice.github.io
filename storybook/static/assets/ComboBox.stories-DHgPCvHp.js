@@ -1,4 +1,4 @@
-const a={title:"Components/ComboBox",tags:["autodocs"],parameters:{docs:{description:{component:"ComboBox from ONLYOFFICE plugin UI."}}}},o=()=>`
+const a={title:"Components/ComboBox",tags:["autodocs"],parameters:{docs:{description:{component:"ComboBox from UNIVAULTOFFICE plugin UI."}}}},o=()=>`
   <label class="header" for="select_example">ComboBox</label>
   <select id="select_example" class="">
     <option value="1">Item 1</option>

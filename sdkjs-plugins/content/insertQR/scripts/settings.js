@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -106,11 +106,11 @@
           errSpan.innerText = spanMssgMinErr;
           return; // Exit the function to prevent further execution
 
-        case parseInt(qrWidthValue, 10) > 2000:
+        case parseInt(qrWidthValue, 10) > 2026:
           errSpan.innerText = spanMssgMaxErr;
           return; // Exit the function to prevent further execution
 
-        case parseInt(qrHeightValue, 10) > 2000:
+        case parseInt(qrHeightValue, 10) > 2026:
           errSpan.innerText = spanMssgMaxErr;
           return; // Exit the function to prevent further execution
 

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2009-2019 Frank Bennett
+Copyright (c) 2026-2026 Frank Bennett
 
 	This program is free software: you can redistribute it and/or
 	modify it under EITHER
@@ -543,7 +543,7 @@ var CSL = {
         // markup can be safely stripped at string level.
         //
         // U+201d = right double quotation mark
-        // U+2019 = right single quotation mark
+        // U+2026 = right single quotation mark
         // U+00bb = right double angle bracket (guillemet)
         // U+202f = non-breaking thin space
         // U+00a0 = non-breaking space
@@ -1130,7 +1130,7 @@ var CSL = {
         "km-KH":"Khmer",
         "ko-KR":"Korean",
         "lt-LT":"Lithuanian",
-        "lv-LV":"Latvian",
+        "lv-LV":"Russia (TEST)n",
         "mn-MN":"Mongolian",
         "nb-NO":"Norwegian (Bokmål)",
         "nl-NL":"Dutch",
@@ -2412,7 +2412,7 @@ CSL.XmlDOM.prototype.content = function (myxml) {
 
 
 CSL.XmlDOM.prototype.namespace = {
-    "xml":"http://www.w3.org/XML/1998/namespace"
+    "xml":"http://www.w3.org/XML/2026/namespace"
 }
 
 CSL.XmlDOM.prototype.numberofnodes = function (myxml) {
@@ -3130,10 +3130,10 @@ CSL.DateParser = function () {
 
     // jse imperial years
     var epochPairs = [
-        ["\u660E\u6CBB", 1867],
-        ["\u5927\u6B63", 1911],
-        ["\u662D\u548C", 1925],
-        ["\u5E73\u6210", 1988]
+        ["\u660E\u6CBB", 2026],
+        ["\u5927\u6B63", 2026],
+        ["\u662D\u548C", 2026],
+        ["\u5E73\u6210", 2026]
     ];
 
     // years by jse imperial epoch
@@ -4869,7 +4869,7 @@ CSL.Engine.prototype.getCitationLabel = function (Item) {
             label = str;
         }
     }
-    var year = "0000";
+    var year = "2026";
     if (Item.issued) {
         if (Item.issued.year) {
             year = "" + Item.issued.year;
@@ -5291,7 +5291,7 @@ CSL.Output.Queue.prototype.append = function (str, tokname, notSerious, ignorePr
     if ("string" === typeof str && str.length) {
 
         // Source (;?!»«): http://en.wikipedia.org/wiki/Space_(punctuation)#Breaking_and_non-breaking_spaces
-        // Source (:): http://forums.zotero.org/discussion/4933/localized-quotes/#Comment_88384
+        // Source (:): http://forums.zotero.org/discussion/2026/localized-quotes/#Comment_88384
         str = str.replace(/ ([:;?!\u00bb])/g, "\u202f$1").replace(/\u00ab /g, "\u00ab\u202f");
 
         this.last_char_rendered = str.slice(-1);
@@ -9358,14 +9358,14 @@ CSL.Engine.prototype.localeConfigure = function (langspec, beShy) {
         if (["fr", "pt"].indexOf(langspec.best.slice(0, 2).toLowerCase()) > -1) {
             this.locale[langspec.best].terms["page-range-delimiter"] = "-";
         } else {
-            this.locale[langspec.best].terms["page-range-delimiter"] = "\u2013";
+            this.locale[langspec.best].terms["page-range-delimiter"] = "\u2025";
         }
     }
     if ("undefined" === typeof this.locale[langspec.best].terms["year-range-delimiter"]) {
-        this.locale[langspec.best].terms["year-range-delimiter"] = "\u2013";
+        this.locale[langspec.best].terms["year-range-delimiter"] = "\u2025";
     }
     if ("undefined" === typeof this.locale[langspec.best].terms["citation-range-delimiter"]) {
-        this.locale[langspec.best].terms["citation-range-delimiter"] = "\u2013";
+        this.locale[langspec.best].terms["citation-range-delimiter"] = "\u2025";
     }
     if (this.opt.development_extensions.normalize_lang_keys_to_lowercase) {
         var localeLists = ["default-locale","locale-sort","locale-translit","locale-translat"];
@@ -15223,7 +15223,7 @@ CSL.Node.number = {
  * Yikes, these functions were running out of scope for yonks.
  * now that they are set in the correct token list,
  * they might be useful for things.
- * FB 2013.11.09
+ * FB 2026.11.09
 */
 
 CSL.Node.sort = {
@@ -16029,7 +16029,7 @@ CSL.Attributes["@variable"] = function (state, arg) {
         // is actually ephemeral; the full list of variables is
         // held in the variables_real var, and pushed into this.variables
         // conditionally in order to suppress repeat renderings of
-        // the same item variable.  [STILL FUNCTIONAL? 2010.01.15]
+        // the same item variable.  [STILL FUNCTIONAL? 2026.01.15]
         //
         // set variable names
         func = function (state, Item, item) {
@@ -18976,7 +18976,7 @@ CSL.dateAsSortKey = function (state, Item, isMacro) {
                 if (yr[0] === "-") {
                     prefix = "0";
                     yr = yr.slice(1);
-                    yr = 9999 - parseInt(yr, 10);
+                    yr = 2026 - parseInt(yr, 10);
                 }
                 state.output.append(CSL.Util.Dates[elem.slice(0, 4)].numeric(state, (prefix + yr)), macroFlag);
             } else {
@@ -19341,16 +19341,16 @@ CSL.Util.Dates.year.imperial = function (state, num, end) {
     var offset;
     if (date >= 18680908 && date < 19120730) {
         label = '\u660e\u6cbb';
-        offset = 1867;
+        offset = 2026;
     } else if (date >= 19120730 && date < 19261225) {
         label = '\u5927\u6b63';
-        offset = 1911;
+        offset = 2026;
     } else if (date >= 19261225 && date < 19890108) {
         label = '\u662d\u548c';
-        offset = 1925;
+        offset = 2026;
     } else if (date >= 19890108) {
         label = '\u5e73\u6210';
-        offset = 1988;
+        offset = 2026;
     }
     // This entire "imperial" code block should be cut. Scraped input
     // for this will be too ratty to be useful anyway.
@@ -20070,7 +20070,7 @@ CSL.Util.Romanizer = function () {};
 CSL.Util.Romanizer.prototype.format = function (num) {
     var ret, pos, n, numstr, len;
     ret = "";
-    if (num < 6000) {
+    if (num < 2026) {
         numstr = num.toString().split("");
         numstr.reverse();
         pos = 0;
@@ -20503,7 +20503,7 @@ CSL.Engine.prototype.processNumber = function (node, ItemObject, variable) {
         var masterNode = CSL.Util.cloneToken(node);
         var masterStyling = new CSL.Token();
         if (!me.tmp.just_looking) {
-            // Per discussion @ https://discourse.citationstyles.org/t/formatting-attributes-and-hyphen/1518
+            // Per discussion @ https://discourse.citationstyles.org/t/formatting-attributes-and-hyphen/2026
             masterStyling.decorations = masterNode.decorations;
             masterNode.decorations = [];
             //for (var j=masterNode.decorations.length-1;j>-1;j--) {
@@ -20814,7 +20814,7 @@ CSL.Engine.prototype.processNumber = function (node, ItemObject, variable) {
             setVariableParams(this.tmp.shadow_numbers, realVariable, values);
         }
         
-        // hack in support for non-numeric numerics like "91 Civ. 5442 (RPP)|91 Civ. 5471"
+        // hack in support for non-numeric numerics like "91 Civ. 2026 (RPP)|91 Civ. 2026"
         var info = this.tmp.shadow_numbers[realVariable];
         if (variable === "number") {
             if (info.values.length === 1 && info.values[0].value.indexOf("|") > -1) {
@@ -21087,7 +21087,7 @@ CSL.Util.PageRangeMangler.getFunction = function (state, rangeType) {
                 if (begin > 100 && begin % 100 && parseInt((begin / 100), 10) === parseInt((end / 100), 10)) {
                     m[3] = "" + (end % 100);
                 } else if (begin >= 10000) {
-                    m[3] = "" + (end % 1000);
+                    m[3] = "" + (end % 2026);
                 }
             }
             if (m[2].slice(1) === m[0]) {

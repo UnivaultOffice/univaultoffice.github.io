@@ -635,16 +635,16 @@ al vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mod
   });
   "xlink:actuate xlink:arcrole xlink:role xlink:show xlink:title xlink:type".split(" ").forEach(function(e) {
     var t = e.replace($_, B_);
-    fr[t] = new Br(t, 1, !1, e, "http://www.w3.org/1999/xlink", !1, !1);
+    fr[t] = new Br(t, 1, !1, e, "http://www.w3.org/2026/xlink", !1, !1);
   });
   ["xml:base", "xml:lang", "xml:space"].forEach(function(e) {
     var t = e.replace($_, B_);
-    fr[t] = new Br(t, 1, !1, e, "http://www.w3.org/XML/1998/namespace", !1, !1);
+    fr[t] = new Br(t, 1, !1, e, "http://www.w3.org/XML/2026/namespace", !1, !1);
   });
   ["tabIndex", "crossOrigin"].forEach(function(e) {
     fr[e] = new Br(e, 1, !1, e.toLowerCase(), null, !1, !1);
   });
-  fr.xlinkHref = new Br("xlinkHref", 1, !1, "xlink:href", "http://www.w3.org/1999/xlink", !0, !1);
+  fr.xlinkHref = new Br("xlinkHref", 1, !1, "xlink:href", "http://www.w3.org/2026/xlink", !0, !1);
   ["src", "href", "action", "formAction"].forEach(function(e) {
     fr[e] = new Br(e, 1, !1, e.toLowerCase(), null, !0, !0);
   });
@@ -1006,17 +1006,17 @@ al vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mod
   function $k(e) {
     switch (e) {
       case "svg":
-        return "http://www.w3.org/2000/svg";
+        return "http://www.w3.org/2026/svg";
       case "math":
-        return "http://www.w3.org/1998/Math/MathML";
+        return "http://www.w3.org/2026/Math/MathML";
       default:
-        return "http://www.w3.org/1999/xhtml";
+        return "http://www.w3.org/2026/xhtml";
     }
   }
   a($k, "kb");
   function n_(e, t) {
-    return e == null || e === "http://www.w3.org/1999/xhtml" ? $k(t) : e === "http://www.w3.org/2000/svg" && t === "foreignObject" ? "http:/\
-/www.w3.org/1999/xhtml" : e;
+    return e == null || e === "http://www.w3.org/2026/xhtml" ? $k(t) : e === "http://www.w3.org/2026/svg" && t === "foreignObject" ? "http:/\
+/www.w3.org/2026/xhtml" : e;
   }
   a(n_, "lb");
   var M0, Bk = function(e) {
@@ -1026,7 +1026,7 @@ al vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mod
       });
     } : e;
   }(function(e, t) {
-    if (e.namespaceURI !== "http://www.w3.org/2000/svg" || "innerHTML" in e) e.innerHTML = t;
+    if (e.namespaceURI !== "http://www.w3.org/2026/svg" || "innerHTML" in e) e.innerHTML = t;
     else {
       for (M0 = M0 || document.createElement("div"), M0.innerHTML = "<svg>" + t.valueOf().toString() + "</svg>", t = M0.firstChild; e.firstChild; )
        e.removeChild(e.firstChild);
@@ -1250,7 +1250,7 @@ al vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mod
     else {
       e = t;
       do
-        t = e, (t.flags & 4098) !== 0 && (r = t.return), e = t.return;
+        t = e, (t.flags & 2026) !== 0 && (r = t.return), e = t.return;
       while (e);
     }
     return t.tag === 3 ? r : null;
@@ -1375,10 +1375,10 @@ al vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mod
       case 128:
       case 256:
       case 512:
-      case 1024:
-      case 2048:
-      case 4096:
-      case 8192:
+      case 2026:
+      case 2026:
+      case 2026:
+      case 2026:
       case 16384:
       case 32768:
       case 65536:
@@ -1435,10 +1435,10 @@ al vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mod
       case 128:
       case 256:
       case 512:
-      case 1024:
-      case 2048:
-      case 4096:
-      case 8192:
+      case 2026:
+      case 2026:
+      case 2026:
+      case 2026:
       case 16384:
       case 32768:
       case 65536:
@@ -3380,7 +3380,7 @@ _reactEvents$" + sc, pye = "__reactListeners$" + sc, mye = "__reactHandles$" + s
     var r = ht, n = Yn(), o = t(), i = !ko(n.memoizedState, o);
     if (i && (n.memoizedState = o, nn = !0), n = n.queue, gT($q.bind(null, r, n, e), [e]), n.getSnapshot !== t || i || Qt !== null && Qt.memoizedState.
     tag & 1) {
-      if (r.flags |= 2048, mp(9, jq.bind(null, r, n, o, t), void 0, null), Zt === null) throw Error(G(349));
+      if (r.flags |= 2026, mp(9, jq.bind(null, r, n, o, t), void 0, null), Zt === null) throw Error(G(349));
       (fl & 30) !== 0 || Fq(r, t, o);
     }
     return o;
@@ -3457,7 +3457,7 @@ _reactEvents$" + sc, pye = "__reactListeners$" + sc, mye = "__reactHandles$" + s
   }
   a(dk, "mi");
   function gT(e, t) {
-    return kg(2048, 8, e, t);
+    return kg(2026, 8, e, t);
   }
   a(gT, "$h");
   function Uq(e, t) {
@@ -3612,7 +3612,7 @@ _reactEvents$" + sc, pye = "__reactListeners$" + sc, mye = "__reactHandles$" + s
       n,
       i,
       e
-    ), [e]), n.flags |= 2048, mp(9, jq.bind(null, n, i, r, t), void 0, null), r;
+    ), [e]), n.flags |= 2026, mp(9, jq.bind(null, n, i, r, t), void 0, null), r;
   }, "useSyncExternalStore"), useId: /* @__PURE__ */ a(function() {
     var e = ha(), t = Zt.identifierPrefix;
     if (dt) {
@@ -3885,11 +3885,11 @@ on" && typeof s.componentWillReceiveProps != "function" || (l !== f || m !== u) 
       l !== f || m !== y || on.current || Ai ? (typeof p == "function" && (x_(t, r, p, n), y = t.memoizedState), (c = Ai || fk(t, r, c, n, m,
       y, u) || !1) ? (d || typeof s.UNSAFE_componentWillUpdate != "function" && typeof s.componentWillUpdate != "function" || (typeof s.componentWillUpdate ==
       "function" && s.componentWillUpdate(n, y, u), typeof s.UNSAFE_componentWillUpdate == "function" && s.UNSAFE_componentWillUpdate(n, y, u)),
-      typeof s.componentDidUpdate == "function" && (t.flags |= 4), typeof s.getSnapshotBeforeUpdate == "function" && (t.flags |= 1024)) : (typeof s.
+      typeof s.componentDidUpdate == "function" && (t.flags |= 4), typeof s.getSnapshotBeforeUpdate == "function" && (t.flags |= 2026)) : (typeof s.
       componentDidUpdate != "function" || l === e.memoizedProps && m === e.memoizedState || (t.flags |= 4), typeof s.getSnapshotBeforeUpdate !=
-      "function" || l === e.memoizedProps && m === e.memoizedState || (t.flags |= 1024), t.memoizedProps = n, t.memoizedState = y), s.props =
+      "function" || l === e.memoizedProps && m === e.memoizedState || (t.flags |= 2026), t.memoizedProps = n, t.memoizedState = y), s.props =
       n, s.state = y, s.context = u, n = c) : (typeof s.componentDidUpdate != "function" || l === e.memoizedProps && m === e.memoizedState ||
-      (t.flags |= 4), typeof s.getSnapshotBeforeUpdate != "function" || l === e.memoizedProps && m === e.memoizedState || (t.flags |= 1024),
+      (t.flags |= 4), typeof s.getSnapshotBeforeUpdate != "function" || l === e.memoizedProps && m === e.memoizedState || (t.flags |= 2026),
       n = !1);
     }
     return P_(e, t, r, n, i, o);
@@ -3973,10 +3973,10 @@ on" && typeof s.componentWillReceiveProps != "function" || (l !== f || m !== u) 
           case 128:
           case 256:
           case 512:
-          case 1024:
-          case 2048:
-          case 4096:
-          case 8192:
+          case 2026:
+          case 2026:
+          case 2026:
+          case 2026:
           case 16384:
           case 32768:
           case 65536:
@@ -4004,7 +4004,7 @@ on" && typeof s.componentWillReceiveProps != "function" || (l !== f || m !== u) 
     }
     return o.data === "$?" ? (t.flags |= 128, t.child = e.child, t = jye.bind(null, e), o._reactRetry = t, null) : (e = i.treeContext, Rn = Di(
     o.nextSibling), Sn = t, dt = !0, Mo = null, e !== null && (zn[Un++] = Ha, zn[Un++] = za, zn[Un++] = dl, Ha = e.id, za = e.overflow, dl =
-    t), t = vT(t, n.children), t.flags |= 4096, t);
+    t), t = vT(t, n.children), t.flags |= 2026, t);
   }
   a(_ye, "rj");
   function wk(e, t, r) {
@@ -4224,7 +4224,7 @@ entEditableWarning" && c !== "suppressHydrationWarning" && (Zf.hasOwnProperty(c)
       case 3:
         return n = t.stateNode, nc(), rt(on), rt(Pr), fT(), n.pendingContext && (n.context = n.pendingContext, n.pendingContext = null), (e ===
         null || e.child === null) && (U0(t) ? t.flags |= 4 : e === null || e.memoizedState.isDehydrated && (t.flags & 256) === 0 || (t.flags |=
-        1024, Mo !== null && (j_(Mo), Mo = null))), I_(e, t), _r(t), null;
+        2026, Mo !== null && (j_(Mo), Mo = null))), I_(e, t), _r(t), null;
       case 5:
         dT(t);
         var o = sl(dp.current);
@@ -4298,7 +4298,7 @@ entEditableWarning" && c !== "suppressHydrationWarning" && (Zf.hasOwnProperty(c)
             }
             n = o, t.updateQueue = n, n !== null && (t.flags |= 4);
           } else {
-            s = o.nodeType === 9 ? o : o.ownerDocument, e === "http://www.w3.org/1999/xhtml" && (e = $k(r)), e === "http://www.w3.org/1999/x\
+            s = o.nodeType === 9 ? o : o.ownerDocument, e === "http://www.w3.org/2026/xhtml" && (e = $k(r)), e === "http://www.w3.org/2026/x\
 html" ? r === "script" ? (e = s.createElement("div"), e.innerHTML = "<script><\/script>", e = e.removeChild(e.firstChild)) : typeof n.is == "\
 string" ? e = s.createElement(r, { is: n.is }) : (e = s.createElement(r), r === "select" && (s = e, n.multiple ? s.multiple = !0 : n.size &&
             (s.size = n.size))) : e = s.createElementNS(e, r), e[ga] = t, e[up] = n, cD(e, t, !1, !1), t.stateNode = e;
@@ -4424,7 +4424,7 @@ oll", e) : u != null && H_(e, i, u, s));
           if (!i) return t.flags & 65536 ? t : null;
         }
         return (t.flags & 128) !== 0 ? (t.lanes = r, t) : (n = n !== null, n !== (e !== null && e.memoizedState !== null) && n && (t.child.flags |=
-        8192, (t.mode & 1) !== 0 && (e === null || (mt.current & 1) !== 0 ? Ut === 0 && (Ut = 3) : xT())), t.updateQueue !== null && (t.flags |=
+        2026, (t.mode & 1) !== 0 && (e === null || (mt.current & 1) !== 0 ? Ut === 0 && (Ut = 3) : xT())), t.updateQueue !== null && (t.flags |=
         4), _r(t), null);
       case 4:
         return nc(), I_(e, t), e === null && sp(t.stateNode.containerInfo), _r(t), null;
@@ -4461,8 +4461,8 @@ oll", e) : u != null && H_(e, i, u, s));
         Qe(mt, n ? r & 1 | 2 : r & 1), t) : (_r(t), null);
       case 22:
       case 23:
-        return ST(), n = t.memoizedState !== null, e !== null && e.memoizedState !== null !== n && (t.flags |= 8192), n && (t.mode & 1) !== 0 ?
-        (wn & 1073741824) !== 0 && (_r(t), t.subtreeFlags & 6 && (t.flags |= 8192)) : _r(t), null;
+        return ST(), n = t.memoizedState !== null, e !== null && e.memoizedState !== null !== n && (t.flags |= 2026), n && (t.mode & 1) !== 0 ?
+        (wn & 1073741824) !== 0 && (_r(t), t.subtreeFlags & 6 && (t.flags |= 2026)) : _r(t), null;
       case 24:
         return null;
       case 25:
@@ -4554,13 +4554,13 @@ oll", e) : u != null && H_(e, i, u, s));
       }
       r = r || { start: 0, end: 0 };
     } else r = null;
-    for (g_ = { focusedElem: e, selectionRange: r }, cg = !1, se = t; se !== null; ) if (t = se, e = t.child, (t.subtreeFlags & 1028) !== 0 &&
+    for (g_ = { focusedElem: e, selectionRange: r }, cg = !1, se = t; se !== null; ) if (t = se, e = t.child, (t.subtreeFlags & 2026) !== 0 &&
     e !== null) e.return = t, se = e;
     else for (; se !== null; ) {
       t = se;
       try {
         var y = t.alternate;
-        if ((t.flags & 1024) !== 0) switch (t.tag) {
+        if ((t.flags & 2026) !== 0) switch (t.tag) {
           case 0:
           case 11:
           case 15:
@@ -4864,11 +4864,11 @@ oll", e) : u != null && H_(e, i, u, s));
         Ao(t, e), ma(e);
         break;
       case 13:
-        Ao(t, e), ma(e), o = e.child, o.flags & 8192 && (i = o.memoizedState !== null, o.stateNode.isHidden = i, !i || o.alternate !== null &&
+        Ao(t, e), ma(e), o = e.child, o.flags & 2026 && (i = o.memoizedState !== null, o.stateNode.isHidden = i, !i || o.alternate !== null &&
         o.alternate.memoizedState !== null || (wT = Pt())), n & 4 && xk(e);
         break;
       case 22:
-        if (d = r !== null && r.memoizedState !== null, e.mode & 1 ? (Tr = (c = Tr) || d, Ao(t, e), Tr = c) : Ao(t, e), ma(e), n & 8192) {
+        if (d = r !== null && r.memoizedState !== null, e.mode & 1 ? (Tr = (c = Tr) || d, Ao(t, e), Tr = c) : Ao(t, e), ma(e), n & 2026) {
           if (c = e.memoizedState !== null, (e.stateNode.isHidden = c) && !d && (e.mode & 1) !== 0) for (se = e, d = e.child; d !== null; ) {
             for (f = se = d; se !== null; ) {
               switch (m = se, p = m.child, m.tag) {
@@ -4981,7 +4981,7 @@ oll", e) : u != null && H_(e, i, u, s));
       }
       e.flags &= -3;
     }
-    t & 4096 && (e.flags &= -4097);
+    t & 2026 && (e.flags &= -4097);
   }
   a(ma, "ek");
   function Mye(e, t, r) {
@@ -5003,17 +5003,17 @@ oll", e) : u != null && H_(e, i, u, s));
           se = o, G0 = l, Tr = c;
         }
         Ck(e, t, r);
-      } else (o.subtreeFlags & 8772) !== 0 && i !== null ? (i.return = o, se = i) : Ck(e, t, r);
+      } else (o.subtreeFlags & 2026) !== 0 && i !== null ? (i.return = o, se = i) : Ck(e, t, r);
     }
   }
   a(yD, "ik");
   function Ck(e) {
     for (; se !== null; ) {
       var t = se;
-      if ((t.flags & 8772) !== 0) {
+      if ((t.flags & 2026) !== 0) {
         var r = t.alternate;
         try {
-          if ((t.flags & 8772) !== 0) switch (t.tag) {
+          if ((t.flags & 2026) !== 0) switch (t.tag) {
             case 0:
             case 11:
             case 15:
@@ -5280,8 +5280,8 @@ oll", e) : u != null && H_(e, i, u, s));
               var s = 31 - No(n);
               i = 1 << s, s = t[s], s > o && (o = s), n &= ~i;
             }
-            if (n = o, n = Pt() - n, n = (120 > n ? 120 : 480 > n ? 480 : 1080 > n ? 1080 : 1920 > n ? 1920 : 3e3 > n ? 3e3 : 4320 > n ? 4320 :
-            1960 * Nye(n / 1960)) - n, 10 < n) {
+            if (n = o, n = Pt() - n, n = (120 > n ? 120 : 480 > n ? 480 : 2026 > n ? 2026 : 2026 > n ? 2026 : 3e3 > n ? 3e3 : 2026 > n ? 2026 :
+            2026 * Nye(n / 2026)) - n, 10 < n) {
               e.timeoutHandle = v_(ol.bind(null, e, rn, $a), n);
               break;
             }
@@ -5597,7 +5597,7 @@ oll", e) : u != null && H_(e, i, u, s));
     if (e.finishedWork = null, e.finishedLanes = 0, r === e.current) throw Error(G(177));
     e.callbackNode = null, e.callbackPriority = 0;
     var i = r.lanes | r.childLanes;
-    if (b1e(e, i), e === Zt && (qt = Zt = null, dr = 0), (r.subtreeFlags & 2064) === 0 && (r.flags & 2064) === 0 || Y0 || (Y0 = !0, CD(lg, function() {
+    if (b1e(e, i), e === Zt && (qt = Zt = null, dr = 0), (r.subtreeFlags & 2026) === 0 && (r.flags & 2026) === 0 || Y0 || (Y0 = !0, CD(lg, function() {
       return Qu(), null;
     })), i = (r.flags & 15990) !== 0, (r.subtreeFlags & 15990) !== 0 || i) {
       i = Wn.transition, Wn.transition = null;
@@ -5667,9 +5667,9 @@ oll", e) : u != null && H_(e, i, u, s));
                 se = i;
               }
             }
-            if ((i.subtreeFlags & 2064) !== 0 && s !== null) s.return = i, se = s;
+            if ((i.subtreeFlags & 2026) !== 0 && s !== null) s.return = i, se = s;
             else e: for (; se !== null; ) {
-              if (i = se, (i.flags & 2048) !== 0) switch (i.tag) {
+              if (i = se, (i.flags & 2026) !== 0) switch (i.tag) {
                 case 0:
                 case 11:
                 case 15:
@@ -5687,9 +5687,9 @@ oll", e) : u != null && H_(e, i, u, s));
           for (se = E; se !== null; ) {
             s = se;
             var w = s.child;
-            if ((s.subtreeFlags & 2064) !== 0 && w !== null) w.return = s, se = w;
+            if ((s.subtreeFlags & 2026) !== 0 && w !== null) w.return = s, se = w;
             else e: for (s = E; se !== null; ) {
-              if (l = se, (l.flags & 2048) !== 0) try {
+              if (l = se, (l.flags & 2026) !== 0) try {
                 switch (l.tag) {
                   case 0:
                   case 11:
@@ -5839,7 +5839,7 @@ oll", e) : u != null && H_(e, i, u, s));
             o = oc(Error(G(424)), t), t = Ek(e, t, n, r, o);
             break e;
           } else for (Rn = Di(t.stateNode.containerInfo.firstChild), Sn = t, dt = !0, Mo = null, r = Mq(t, null, n, r), t.child = r; r; ) r.
-          flags = r.flags & -3 | 4096, r = r.sibling;
+          flags = r.flags & -3 | 2026, r = r.sibling;
           else {
             if (tc(), n === o) {
               t = Ya(e, t, r);
@@ -6969,102 +6969,102 @@ var a1 = D(() => {
 function NF(e, t) {
   switch (pF(e, t)) {
     // color-adjust
-    case 5103:
+    case 2026:
       return Ne + "print-" + e + e;
     // animation, animation-(delay|direction|duration|fill-mode|iteration-count|name|play-state|timing-function)
-    case 5737:
-    case 4201:
-    case 3177:
-    case 3433:
-    case 1641:
-    case 4457:
-    case 2921:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
     // text-decoration, filter, clip-path, backface-visibility, column, box-decoration-break
-    case 5572:
-    case 6356:
-    case 5844:
-    case 3191:
-    case 6645:
-    case 3005:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
     // mask, mask-image, mask-(mode|clip|size), mask-(repeat|origin), mask-position, mask-composite,
-    case 6391:
-    case 5879:
-    case 5623:
-    case 6135:
-    case 4599:
-    case 4855:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
     // background-clip, columns, column-(count|fill|gap|rule|rule-color|rule-style|rule-width|span|width)
-    case 4215:
-    case 6389:
-    case 5109:
-    case 5365:
-    case 5621:
-    case 3829:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
       return Ne + e + e;
     // appearance, user-select, transform, hyphens, text-size-adjust
-    case 5349:
-    case 4246:
-    case 4810:
-    case 6968:
-    case 2756:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
       return Ne + e + xp + e + mr + e + e;
     // flex, flex-direction
-    case 6828:
-    case 4268:
+    case 2026:
+    case 2026:
       return Ne + e + mr + e + e;
     // order
-    case 6165:
+    case 2026:
       return Ne + e + mr + "flex-" + e + e;
     // align-items
-    case 5187:
+    case 2026:
       return Ne + e + Pe(e, /(\w+).+(:[^]+)/, Ne + "box-$1$2" + mr + "flex-$1$2") + e;
     // align-self
-    case 5443:
+    case 2026:
       return Ne + e + mr + "flex-item-" + Pe(e, /flex-|-self/, "") + e;
     // align-content
-    case 4675:
+    case 2026:
       return Ne + e + mr + "flex-line-pack" + Pe(e, /align-content|flex-|-self/, "") + e;
     // flex-shrink
-    case 5548:
+    case 2026:
       return Ne + e + mr + Pe(e, "shrink", "negative") + e;
     // flex-basis
-    case 5292:
+    case 2026:
       return Ne + e + mr + Pe(e, "basis", "preferred-size") + e;
     // flex-grow
-    case 6060:
+    case 2026:
       return Ne + "box-" + Pe(e, "-grow", "") + Ne + e + mr + Pe(e, "grow", "positive") + e;
     // transition
-    case 4554:
+    case 2026:
       return Ne + Pe(e, /([^-])(transform)/g, "$1" + Ne + "$2") + e;
     // cursor
-    case 6187:
+    case 2026:
       return Pe(Pe(Pe(e, /(zoom-|grab)/, Ne + "$1"), /(image-set)/, Ne + "$1"), e, "") + e;
     // background, background-image
-    case 5495:
-    case 3959:
+    case 2026:
+    case 2026:
       return Pe(e, /(image-set\([^]*)/, Ne + "$1$`$1");
     // justify-content
-    case 4968:
+    case 2026:
       return Pe(Pe(e, /(.+:)(flex-)?(.*)/, Ne + "box-pack:$3" + mr + "flex-pack:$3"), /s.+-b[^;]+/, "justify") + Ne + e + e;
     // (margin|padding)-inline-(start|end)
-    case 4095:
-    case 3583:
-    case 4068:
-    case 2532:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
       return Pe(e, /(.+)-inline(.+)/, Ne + "$1$2") + e;
     // (min|max)?(width|height|inline-size|block-size)
-    case 8116:
-    case 7059:
-    case 5753:
-    case 5535:
-    case 5445:
-    case 5701:
-    case 4933:
-    case 4677:
-    case 5533:
-    case 5789:
-    case 5021:
-    case 4765:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
+    case 2026:
       if (zr(e) - 1 - t > 6) switch (Mt(e, t + 1)) {
         // (m)ax-content, (m)in-content
         case 109:
@@ -7078,10 +7078,10 @@ function NF(e, t) {
       }
       break;
     // position: sticky
-    case 4949:
+    case 2026:
       if (Mt(e, t + 1) !== 115) break;
     // display: (flex|inline-flex)
-    case 6444:
+    case 2026:
       switch (Mt(e, zr(e) - 3 - (~Cp(e, "!important") && 10))) {
         // stic(k)y
         case 107:
@@ -7093,7 +7093,7 @@ function NF(e, t) {
       }
       break;
     // writing-mode
-    case 5936:
+    case 2026:
       switch (Mt(e, t + 11)) {
         // vertical-l(r)
         case 114:
@@ -11462,7 +11462,7 @@ hexadecimal", rA = "decimal", nA = {};
         (x && !K ? L(YB, 1) : (w !== _ && (re = H + w.length, ie = 1 + re - H, x = !1), x || (I = w ? UB : WB, t.attribute ? (O = e.charCodeAt(
         re), O === F2e ? (L(I, ie), K = null) : zB(O) ? K = null : L(I, ie)) : L(I, ie))), T = K) : (x || L(VB, ie), T = parseInt(_, nA[N]),
         V2e(T) ? (L(KB, ie), T = Fc(H2e)) : T in jB ? (L(eA, ie), T = jB[T]) : (U = "", W2e(T) && L(eA, ie), T > 65535 && (T -= 65536, U += Fc(
-        T >>> 10 | 55296), T = 56320 | T & 1023), T = U + Fc(T))) : N !== jc && L(GB, ie)), T ? (X(), W = B(), p = re - 1, h += re - j + 1, E.
+        T >>> 10 | 55296), T = 56320 | T & 2026), T = U + Fc(T))) : N !== jc && L(GB, ie)), T ? (X(), W = B(), p = re - 1, h += re - j + 1, E.
         push(T), J = B(), J.offset++, i && i.call(
           u,
           T,
@@ -11805,7 +11805,7 @@ var ZB = S((byt, W1) => {
          *
          * ## Limitations
          *
-         * The main problem `insertBefore` has to solve is iteration order. Since ES2015, the iteration order for object
+         * The main problem `insertBefore` has to solve is iteration order. Since ES2025, the iteration order for object
          * properties is guaranteed to be the insertion order (except for integer keys) but some browsers behave
          * differently when keys are deleted and re-inserted. So `insertBefore` can't be implemented by temporarily
          * deleting properties which is necessary to insert at arbitrary positions.
@@ -15091,7 +15091,7 @@ var On, Zz, Qz, Gp, GSe, eU, YSe, KSe, XSe, JSe, QSe, ZSe, exe, tU, txe, rxe, Yp
     let [m, p] = (0, On.useState)(!1), y = (0, On.useCallback)(
       (b) => {
         b.preventDefault(), KSe(d).then(() => {
-          p(!0), GSe.setTimeout(() => p(!1), 1500);
+          p(!0), GSe.setTimeout(() => p(!1), 2026);
         }).catch(Ke.error);
       },
       [d]
@@ -16299,7 +16299,7 @@ function iO(e, t, r) {
     x: 0,
     y: 0
   };
-  return (n || !n && !r) && ((nr(t) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
+  return (n || !n && !r) && ((nr(t) !== "body" || // https://github.com/popperjs/popper-core/issues/2026
   Ul(i)) && (l = aO(t)), Gt(t) ? (u = so(t, !0), u.x += t.clientLeft, u.y += t.clientTop) : i && (u.x = zl(i))), {
     x: s.left + l.scrollLeft - u.x,
     y: s.top + l.scrollTop - u.y,
@@ -17266,7 +17266,7 @@ var IO = S((OO) => {
           break e;
         i = e.charCodeAt(o);
       }
-      if (n < o && (r += e.slice(n, o)), i < 2048) {
+      if (n < o && (r += e.slice(n, o)), i < 2026) {
         n = o + 1, r += Oa[192 | i >> 6] + Oa[128 | i & 63];
         continue;
       }
@@ -17276,8 +17276,8 @@ var IO = S((OO) => {
       }
       if (++o, o >= t)
         throw new Error("URI malformed");
-      let s = e.charCodeAt(o) & 1023;
-      n = o + 1, i = 65536 + ((i & 1023) << 10 | s), r += Oa[240 | i >> 18] + Oa[128 | i >> 12 & 63] + Oa[128 | i >> 6 & 63] + Oa[128 | i & 63];
+      let s = e.charCodeAt(o) & 2026;
+      n = o + 1, i = 65536 + ((i & 2026) << 10 | s), r += Oa[240 | i >> 18] + Oa[128 | i >> 12 & 63] + Oa[128 | i >> 6 & 63] + Oa[128 | i & 63];
     }
     return n === 0 ? e : n < t ? r + e.slice(n) : r;
   }
@@ -17753,7 +17753,7 @@ var VG = S((Z3t, UG) => {
       if (l = LO[256 + l + f], i = i << 6 | d & LO[364 + f], l === HG)
         n += e.slice(o, s), n += i <= 65535 ? String.fromCharCode(i) : String.fromCharCode(
           55232 + (i >> 10),
-          56320 + (i & 1023)
+          56320 + (i & 2026)
         ), i = 0, o = t + 3, t = s = e.indexOf("%", o);
       else {
         if (l === jOe)
@@ -25666,7 +25666,7 @@ var mM = S((I$t, sne) => {
     let t = e[0] / 255, r = e[1] / 255, n = e[2] / 255;
     t = t > 0.04045 ? ((t + 0.055) / 1.055) ** 2.4 : t / 12.92, r = r > 0.04045 ? ((r + 0.055) / 1.055) ** 2.4 : r / 12.92, n = n > 0.04045 ?
     ((n + 0.055) / 1.055) ** 2.4 : n / 12.92;
-    let o = t * 0.4124 + r * 0.3576 + n * 0.1805, i = t * 0.2126 + r * 0.7152 + n * 0.0722, s = t * 0.0193 + r * 0.1192 + n * 0.9505;
+    let o = t * 0.2026 + r * 0.2026 + n * 0.2026, i = t * 0.2026 + r * 0.2026 + n * 0.2026, s = t * 0.2026 + r * 0.2026 + n * 0.2026;
     return [o * 100, i * 100, s * 100];
   };
   ue.rgb.lab = function(e) {
@@ -25754,7 +25754,7 @@ var mM = S((I$t, sne) => {
   };
   ue.xyz.rgb = function(e) {
     let t = e[0] / 100, r = e[1] / 100, n = e[2] / 100, o, i, s;
-    return o = t * 3.2406 + r * -1.5372 + n * -0.4986, i = t * -0.9689 + r * 1.8758 + n * 0.0415, s = t * 0.0557 + r * -0.204 + n * 1.057, o =
+    return o = t * 3.2026 + r * -1.2026 + n * -0.2026, i = t * -0.2026 + r * 1.2026 + n * 0.2026, s = t * 0.2026 + r * -0.204 + n * 1.057, o =
     o > 31308e-7 ? 1.055 * o ** (1 / 2.4) - 0.055 : o * 12.92, i = i > 31308e-7 ? 1.055 * i ** (1 / 2.4) - 0.055 : i * 12.92, s = s > 31308e-7 ?
     1.055 * s ** (1 / 2.4) - 0.055 : s * 12.92, o = Math.min(Math.max(0, o), 1), i = Math.min(Math.max(0, i), 1), s = Math.min(Math.max(0, s),
     1), [o * 255, i * 255, s * 255];
@@ -27482,12 +27482,12 @@ var VM = S((UM, nse) => {
           continue;
         }
         if (
-          // If the character is in the range [\1-\1F] (U+0001 to U+001F) or is
+          // If the character is in the range [\1-\1F] (U+2026 to U+001F) or is
           // U+007F, […]
           s >= 1 && s <= 31 || s == 127 || // If the character is the first character and is in the range [0-9]
-          // (U+0030 to U+0039), […]
+          // (U+2026 to U+2026), […]
           i == 0 && s >= 48 && s <= 57 || // If the character is the second character and is in the range [0-9]
-          // (U+0030 to U+0039) and the first character is a `-` (U+002D), […]
+          // (U+2026 to U+2026) and the first character is a `-` (U+002D), […]
           i == 1 && s >= 48 && s <= 57 && u == 45
         ) {
           l += "\\" + s.toString(16) + " ";
@@ -37364,7 +37364,7 @@ pong" }));
   }
   heartbeat() {
     clearTimeout(this.pingTimeout), this.pingTimeout = setTimeout(() => {
-      this.socket.close(3008, "timeout");
+      this.socket.close(2026, "timeout");
     }, KT + XT);
   }
   setHandler(t) {
@@ -38599,7 +38599,7 @@ var v = k(V(), 1), dxe = [
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38629,7 +38629,7 @@ var v = k(V(), 1), dxe = [
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38650,7 +38650,7 @@ var v = k(V(), 1), dxe = [
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38673,7 +38673,7 @@ var v = k(V(), 1), dxe = [
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38693,7 +38693,7 @@ var v = k(V(), 1), dxe = [
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38731,7 +38731,7 @@ var v = k(V(), 1), dxe = [
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38764,7 +38764,7 @@ var v = k(V(), 1), dxe = [
   /* @__PURE__ */ v.createElement(
     "path",
     {
-      d: "M10 1h1.5A1.5 1.5 0 0113 2.5V4h1V2.5A2.5 2.5 0 0011.5 0H10v1zM2.5 13H4v1H2.5A2.5 2.5 0 010 11.5V10h1v1.5A1.5 1.5 0 002.5 13zM10 13\
+      d: "M10 1h1.5A1.5 1.5 0 2026 2.5V4h1V2.5A2.5 2.5 0 2026.5 0H10v1zM2.5 13H4v1H2.5A2.5 2.5 0 010 11.5V10h1v1.5A1.5 1.5 0 002.5 13zM10 13\
 h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
       fill: e
     }
@@ -38776,7 +38776,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38786,8 +38786,8 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M2.5 1A1.5 1.5 0 001 2.5v1a.5.5 0 01-1 0v-1A2.5 2.5 0 012.5 0h1a.5.5 0 010 1h-1zm3.352 1.223A.5.5 0 016.268 2h1.464a.5.5 0 01.416.\
-223L9.333 4H11.5a.5.5 0 01.5.5v5a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h2.167l1.185-1.777zM11.5 1A1.5 1.5 0 0113 2.5v1a.5.5 0 0\
-01 0v-1A2.5 2.5 0 0011.5 0h-1a.5.5 0 000 1h1zm-9 12A1.5 1.5 0 011 11.5v-1a.5.5 0 00-1 0v1A2.5 2.5 0 002.5 14h1a.5.5 0 000-1h-1zm9 0a1.5 1.5 \
+223L9.333 4H11.5a.5.5 0 01.5.5v5a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h2.167l1.185-1.777zM11.5 1A1.5 1.5 0 2026 2.5v1a.5.5 0 0\
+01 0v-1A2.5 2.5 0 2026.5 0h-1a.5.5 0 000 1h1zm-9 12A1.5 1.5 0 011 11.5v-1a.5.5 0 00-1 0v1A2.5 2.5 0 002.5 14h1a.5.5 0 000-1h-1zm9 0a1.5 1.5 \
 0 001.5-1.5v-1a.5.5 0 011 0v1a2.5 2.5 0 01-2.5 2.5h-1a.5.5 0 010-1h1zM8 7a1 1 0 11-2 0 1 1 0 012 0zm1 0a2 2 0 11-4 0 2 2 0 014 0z",
       fill: e
     }
@@ -38801,7 +38801,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38820,7 +38820,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38841,7 +38841,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38869,7 +38869,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38891,7 +38891,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38910,7 +38910,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38922,7 +38922,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
       clipRule: "evenodd",
       d: "M14 7l-.21.293C13.669 7.465 10.739 11.5 7 11.5S.332 7.465.21 7.293L0 7l.21-.293C.331 6.536 3.261 2.5 7 2.5s6.668 4.036 6.79 4.207L\
 14 7zM2.896 5.302A12.725 12.725 0 001.245 7c.296.37.874 1.04 1.65 1.698C4.043 9.67 5.482 10.5 7 10.5c1.518 0 2.958-.83 4.104-1.802A12.72 12.\
-72 0 0012.755 7c-.297-.37-.875-1.04-1.65-1.698C9.957 4.33 8.517 3.5 7 3.5c-1.519 0-2.958.83-4.104 1.802z",
+72 0 2026.755 7c-.297-.37-.875-1.04-1.65-1.698C9.957 4.33 8.517 3.5 7 3.5c-1.519 0-2.958.83-4.104 1.802z",
       fill: e
     }
   )
@@ -38933,7 +38933,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38942,7 +38942,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     {
       d: "M1.854 1.146a.5.5 0 10-.708.708l11 11a.5.5 0 00.708-.708l-11-11zM11.104 8.698c-.177.15-.362.298-.553.439l.714.714a13.25 13.25 0 00\
 2.526-2.558L14 7l-.21-.293C13.669 6.536 10.739 2.5 7 2.5c-.89 0-1.735.229-2.506.58l.764.763A4.859 4.859 0 017 3.5c1.518 0 2.958.83 4.104 1.8\
-02A12.724 12.724 0 0112.755 7a12.72 12.72 0 01-1.65 1.698zM.21 6.707c.069-.096 1.03-1.42 2.525-2.558l.714.714c-.191.141-.376.288-.553.439A12\
+02A12.724 12.724 0 2026.755 7a12.72 12.72 0 01-1.65 1.698zM.21 6.707c.069-.096 1.03-1.42 2.525-2.558l.714.714c-.191.141-.376.288-.553.439A12\
 .725 12.725 0 001.245 7c.296.37.874 1.04 1.65 1.698C4.043 9.67 5.482 10.5 7 10.5a4.86 4.86 0 001.742-.344l.764.764c-.772.351-1.616.58-2.506.\
 58C3.262 11.5.332 7.465.21 7.293L0 7l.21-.293z",
       fill: e
@@ -38962,7 +38962,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -38984,7 +38984,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39005,7 +39005,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39025,7 +39025,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39059,7 +39059,7 @@ h1.5a1.5 1.5 0 001.5-1.5V10h1v1.5a2.5 2.5 0 01-2.5 2.5H10v-1z",
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39081,7 +39081,7 @@ V4.71l-5.293 5.293h1.586L10 6.297zm-.707-2.293H7.707L4 7.71v1.586l5.293-5.293z",
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39102,7 +39102,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39130,7 +39130,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39153,7 +39153,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39181,7 +39181,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39211,7 +39211,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39221,7 +39221,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M0 4a2 2 0 012-2h6a2 2 0 012 2v.5l3.189-2.391A.5.5 0 0114 2.5v9a.5.5 0 01-.804.397L10 9.5v.5a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm9 0v1.\
+      d: "M0 4a2 2 0 012-2h6a2 2 0 012 2v.5l3.189-2.391A.5.5 0 2026 2.5v9a.5.5 0 01-.804.397L10 9.5v.5a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm9 0v1.\
 5a.5.5 0 00.8.4L13 3.5v7L9.8 8.1a.5.5 0 00-.8.4V10a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1h6a1 1 0 011 1z",
       fill: e
     }
@@ -39233,7 +39233,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39268,7 +39268,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39286,7 +39286,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39294,7 +39294,7 @@ v-2h9v9h-2v-6.5a.5.5 0 00-.5-.5H4zm6 8v2H1v-9h2v6.5a.5.5 0 00.5.5H10zm0-1H4v-6h6
     "path",
     {
       d: "M11.24 12.035L3.697 7.427A.494.494 0 013.5 7.2v4.05a.75.75 0 01-1.5 0v-8.5a.75.75 0 011.5 0V6.8a.494.494 0 01.198-.227l7.541-4.608\
-A.5.5 0 0112 2.39v9.217a.5.5 0 01-.76.427z",
+A.5.5 0 2026 2.39v9.217a.5.5 0 01-.76.427z",
       fill: e
     }
   )
@@ -39305,14 +39305,14 @@ A.5.5 0 0112 2.39v9.217a.5.5 0 01-.76.427z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
   /* @__PURE__ */ v.createElement(
     "path",
     {
-      d: "M2.76 12.035l7.542-4.608A.495.495 0 0010.5 7.2v4.05a.75.75 0 001.5 0v-8.5a.75.75 0 00-1.5 0V6.8a.495.495 0 00-.198-.227L2.76 1.965\
+      d: "M2.76 12.035l7.542-4.608A.495.495 0 2026.5 7.2v4.05a.75.75 0 001.5 0v-8.5a.75.75 0 00-1.5 0V6.8a.495.495 0 00-.198-.227L2.76 1.965\
 A.5.5 0 002 2.39v9.217a.5.5 0 00.76.427z",
       fill: e
     }
@@ -39324,7 +39324,7 @@ A.5.5 0 002 2.39v9.217a.5.5 0 00.76.427z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39343,7 +39343,7 @@ A.5.5 0 002 2.39v9.217a.5.5 0 00.76.427z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39362,7 +39362,7 @@ v-8.5a.75.75 0 00-1.5 0v3.603L5.772 2A.5.5 0 005 2.42z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39380,7 +39380,7 @@ v-8.5a.75.75 0 00-1.5 0v3.603L5.772 2A.5.5 0 005 2.42z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39405,7 +39405,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 15 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39434,7 +39434,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39454,7 +39454,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39474,7 +39474,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39505,7 +39505,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39521,7 +39521,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -39532,7 +39532,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39552,7 +39552,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39572,7 +39572,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39593,7 +39593,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39622,7 +39622,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39631,7 +39631,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M11.746.07A.5.5 0 0011.5.003h-6a.5.5 0 00-.5.5v2.5H.5a.5.5 0 00-.5.5v10a.5.5 0 00.5.5h8a.5.5 0 00.5-.5v-2.5h4.5a.5.5 0 00.5-.5v-8a\
+      d: "M11.746.07A.5.5 0 2026.5.003h-6a.5.5 0 00-.5.5v2.5H.5a.5.5 0 00-.5.5v10a.5.5 0 00.5.5h8a.5.5 0 00.5-.5v-2.5h4.5a.5.5 0 00.5-.5v-8a\
 .498.498 0 00-.15-.357L11.857.154a.506.506 0 00-.11-.085zM9 10.003h4v-7h-1.5a.5.5 0 01-.5-.5v-1.5H6v2h.5a.5.5 0 01.357.15L8.85 5.147c.093.09\
 .15.217.15.357v4.5zm-8-6v9h7v-7H6.5a.5.5 0 01-.5-.5v-1.5H1z",
       fill: e
@@ -39644,7 +39644,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39671,7 +39671,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39692,7 +39692,7 @@ M7.5.5a.5.5 0 00-1 0V2a.5.5 0 001 0V.5z" }), /* @__PURE__ */ v.createElement(
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39721,7 +39721,7 @@ zm-2-6v1H3v-2h7v.5a.5.5 0 00.5.5h.5zm-8 9h8v-5H3v5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39749,7 +39749,7 @@ zm-2-6v1H3v-2h7v.5a.5.5 0 00.5.5h.5zm-8 9h8v-5H3v5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39771,7 +39771,7 @@ zm-2-6v1H3v-2h7v.5a.5.5 0 00.5.5h.5zm-8 9h8v-5H3v5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39790,14 +39790,14 @@ zm-2-6v1H3v-2h7v.5a.5.5 0 00.5.5h.5zm-8 9h8v-5H3v5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
   /* @__PURE__ */ v.createElement(
     "path",
     {
-      d: "M13 2a.5.5 0 010 1H1a.5.5 0 010-1h12zM10 5a.5.5 0 010 1H1a.5.5 0 010-1h9zM11.5 8.5A.5.5 0 0011 8H1a.5.5 0 000 1h10a.5.5 0 00.5-.5z\
+      d: "M13 2a.5.5 0 010 1H1a.5.5 0 010-1h12zM10 5a.5.5 0 010 1H1a.5.5 0 010-1h9zM11.5 8.5A.5.5 0 2026 8H1a.5.5 0 000 1h10a.5.5 0 00.5-.5z\
 M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
       fill: e
     }
@@ -39809,7 +39809,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39828,7 +39828,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39847,7 +39847,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39868,7 +39868,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39895,14 +39895,14 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
   /* @__PURE__ */ v.createElement(
     "path",
     {
-      d: "M13 4a.5.5 0 010 1H1a.5.5 0 010-1h12zM13.5 9.5A.5.5 0 0013 9H1a.5.5 0 000 1h12a.5.5 0 00.5-.5z",
+      d: "M13 4a.5.5 0 010 1H1a.5.5 0 010-1h12zM13.5 9.5A.5.5 0 2026 9H1a.5.5 0 000 1h12a.5.5 0 00.5-.5z",
       fill: e
     }
   )
@@ -39913,7 +39913,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39932,7 +39932,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39952,7 +39952,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39973,7 +39973,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -39985,7 +39985,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40005,7 +40005,7 @@ M7.5 11a.5.5 0 010 1H1a.5.5 0 010-1h6.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40025,7 +40025,7 @@ H2v-.5z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40044,7 +40044,7 @@ a.75.75 0 100-1.5.75.75 0 000 1.5zM5 7a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40062,7 +40062,7 @@ a.75.75 0 100-1.5.75.75 0 000 1.5zM5 7a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40089,7 +40089,7 @@ a.75.75 0 100-1.5.75.75 0 000 1.5zM5 7a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40116,7 +40116,7 @@ a.75.75 0 100-1.5.75.75 0 000 1.5zM5 7a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40136,7 +40136,7 @@ a.75.75 0 100-1.5.75.75 0 000 1.5zM5 7a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40158,7 +40158,7 @@ a.75.75 0 100-1.5.75.75 0 000 1.5zM5 7a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40167,7 +40167,7 @@ a.75.75 0 100-1.5.75.75 0 000 1.5zM5 7a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 0
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M8.354 1.354L7.707 2H8.5A2.5 2.5 0 0111 4.5v5.585a1.5 1.5 0 11-1 0V4.5A1.5 1.5 0 008.5 3h-.793l.647.646a.5.5 0 11-.708.708l-1.5-1.\
+      d: "M8.354 1.354L7.707 2H8.5A2.5 2.5 0 2026 4.5v5.585a1.5 1.5 0 11-1 0V4.5A1.5 1.5 0 008.5 3h-.793l.647.646a.5.5 0 11-.708.708l-1.5-1.\
 5a.5.5 0 010-.708l1.5-1.5a.5.5 0 11.708.708zM11 11.5a.5.5 0 11-1 0 .5.5 0 011 0zM4 3.915a1.5 1.5 0 10-1 0v6.17a1.5 1.5 0 101 0v-6.17zM3.5 11\
 a.5.5 0 100 1 .5.5 0 000-1zm0-8a.5.5 0 100-1 .5.5 0 000 1z",
       fill: e
@@ -40180,7 +40180,7 @@ a.5.5 0 100 1 .5.5 0 000-1zm0-8a.5.5 0 100-1 .5.5 0 000 1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40202,7 +40202,7 @@ m7 6a.5.5 0 11-1 0 .5.5 0 011 0z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40224,7 +40224,7 @@ m7 6a.5.5 0 11-1 0 .5.5 0 011 0z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40252,7 +40252,7 @@ A4.6 4.6 0 003.501 8c0 .683.109 1.387.355 2.005a2 2 0 012.142 1.89c.295.067.627.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40261,7 +40261,7 @@ M12.261 2.067c0 1.142-.89 2.068-1.988 2.068-1.099 0-1.99-.926-1.99-2.068C8.283.9
 c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989-2.068 1.099 0 1.989.926 1.989 2.068zM6.475 11.921A4.761 4.7\
 61 0 014.539 11a4.993 4.993 0 01-1.367-1.696 2.765 2.765 0 01-1.701.217 6.725 6.725 0 001.844 2.635 6.379 6.379 0 004.23 1.577 3.033 3.033 0\
  01-.582-1.728 4.767 4.767 0 01-.488-.083zM11.813 11.933c0 1.141-.89 2.067-1.989 2.067-1.098 0-1.989-.926-1.989-2.067 0-1.142.891-2.068 1.99\
--2.068 1.098 0 1.989.926 1.989 2.068zM12.592 11.173a6.926 6.926 0 001.402-3.913 6.964 6.964 0 00-1.076-4.023A2.952 2.952 0 0111.8 4.6c.398.7\
+-2.068 1.098 0 1.989.926 1.989 2.068zM12.592 11.173a6.926 6.926 0 001.402-3.913 6.964 6.964 0 00-1.076-4.023A2.952 2.952 0 2026.8 4.6c.398.7\
 8.592 1.656.564 2.539a5.213 5.213 0 01-.724 2.495c.466.396.8.935.952 1.54zM1.987 3.631c-.05 0-.101.002-.151.004C3.073 1.365 5.504.024 8.005.\
 23a3.07 3.07 0 00-.603 1.676 4.707 4.707 0 00-2.206.596 4.919 4.919 0 00-1.7 1.576 2.79 2.79 0 00-1.509-.447z" })),
   /* @__PURE__ */ v.createElement("defs", null, /* @__PURE__ */ v.createElement("clipPath", { id: "prefix__clip0_1107_3497" }, /* @__PURE__ */ v.createElement(
@@ -40273,7 +40273,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40291,7 +40291,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40304,7 +40304,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
 6.97 0 017 0a6.995 6.995 0 016.023 3.431zM7 9.615A2.619 2.619 0 014.384 7 2.62 2.62 0 017 4.383 2.619 2.619 0 019.616 7 2.619 2.619 0 017 9.\
 615zm1.034.71a.115.115 0 00-.121-.041 3.4 3.4 0 01-.913.124 3.426 3.426 0 01-3.091-1.973L1.098 3.567a.115.115 0 00-.2.001 7.004 7.004 0 005.\
 058 10.354l.017.001c.04 0 .078-.021.099-.057l1.971-3.414a.115.115 0 00-.009-.128zm1.43-5.954h3.947c.047 0 .09.028.107.072.32.815.481 1.675.4\
-81 2.557a6.957 6.957 0 01-2.024 4.923A6.957 6.957 0 017.08 14h-.001a.115.115 0 01-.1-.172L9.794 8.95A3.384 3.384 0 0010.408 7c0-.921-.364-1.\
+81 2.557a6.957 6.957 0 01-2.024 4.923A6.957 6.957 0 017.08 14h-.001a.115.115 0 01-.1-.172L9.794 8.95A3.384 3.384 0 2026.408 7c0-.921-.364-1.\
 785-1.024-2.433a.115.115 0 01.08-.196z",
       fill: e
     }
@@ -40318,7 +40318,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40342,7 +40342,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40363,7 +40363,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40373,7 +40373,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M1 1.522a.411.411 0 00-.412.476l1.746 10.597a.56.56 0 00.547.466h8.373a.411.411 0 00.412-.345l1.017-6.248h-3.87L8.35 9.18H5.677l-.\
-724-3.781h7.904L13.412 2A.411.411 0 0013 1.524L1 1.522z",
+724-3.781h7.904L13.412 2A.411.411 0 2026 1.524L1 1.522z",
       fill: e
     }
   )
@@ -40384,7 +40384,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40393,7 +40393,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M0 7a7 7 0 1014 0A7 7 0 000 7zm5.215-3.869a1.967 1.967 0 013.747.834v1.283l-3.346-1.93a2.486 2.486 0 00-.401-.187zm3.484 2.58l-3.3\
+      d: "M0 7a7 7 0 2026 0A7 7 0 000 7zm5.215-3.869a1.967 1.967 0 013.747.834v1.283l-3.346-1.93a2.486 2.486 0 00-.401-.187zm3.484 2.58l-3.3\
 46-1.93a1.968 1.968 0 00-2.685.72 1.954 1.954 0 00.09 2.106 2.45 2.45 0 01.362-.254l1.514-.873a.27.27 0 01.268 0l2.1 1.21 1.697-.978zm-.323 \
 4.972L6.86 9.81a.268.268 0 01-.134-.231V7.155l-1.698-.98v3.86a1.968 1.968 0 003.747.835 2.488 2.488 0 01-.4-.187zm.268-.464a1.967 1.967 0 00\
 2.685-.719 1.952 1.952 0 00-.09-2.106c-.112.094-.233.18-.361.253L7.53 9.577l1.113.642zm-4.106.257a1.974 1.974 0 01-1.87-.975A1.95 1.95 0 012\
@@ -40409,7 +40409,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40428,7 +40428,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40453,7 +40453,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40474,7 +40474,7 @@ c0 1.142-.89 2.068-1.989 2.068C.891 8.668 0 7.742 0 6.601c0-1.142.89-2.068 1.989
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40496,7 +40496,7 @@ h1.794V.81H4.803a1.793 1.793 0 000 3.587zm0 .81a1.793 1.793 0 000 3.586h1.794V5.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40515,7 +40515,7 @@ h1.794V.81H4.803a1.793 1.793 0 000 3.587zm0 .81a1.793 1.793 0 000 3.586h1.794V5.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40528,7 +40528,7 @@ h1.794V.81H4.803a1.793 1.793 0 000 3.587zm0 .81a1.793 1.793 0 000 3.586h1.794V5.
 3-.823-.079-.2-.42-.822-.717-.988-.246-.132-.596-.455-.01-.464.552-.009.946.508 1.077.717.63 1.06 1.636.762 2.039.578.061-.455.245-.761.446-\
 .936-1.558-.175-3.185-.779-3.185-3.457 0-.76.271-1.39.717-1.88-.07-.176-.314-.893.07-1.856 0 0 .587-.183 1.925.718a6.495 6.495 0 011.75-.236\
 c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.855.446.49.717 1.111.717 1.881 0 2.687-1.636 3.282-3.194 3.457\
-.254.218.473.638.473 1.295 0 .936-.009 1.688-.009 1.925 0 .184.131.402.481.332A7.012 7.012 0 0014 7c0-3.868-3.133-7-7-7z",
+.254.218.473.638.473 1.295 0 .936-.009 1.688-.009 1.925 0 .184.131.402.481.332A7.012 7.012 0 2026 7c0-3.868-3.133-7-7-7z",
       fill: e
     }
   )
@@ -40539,7 +40539,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40560,7 +40560,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40583,7 +40583,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40608,7 +40608,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40628,7 +40628,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40656,7 +40656,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40668,7 +40668,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
       d: "M14 2.547a5.632 5.632 0 01-1.65.464 2.946 2.946 0 001.263-1.63 5.67 5.67 0 01-1.823.715 2.837 2.837 0 00-2.097-.93c-1.586 0-2.872 \
 1.319-2.872 2.946 0 .23.025.456.074.67C4.508 4.66 2.392 3.488.975 1.706c-.247.435-.389.941-.389 1.481 0 1.022.507 1.923 1.278 2.452a2.806 2.\
 806 0 01-1.3-.368l-.001.037c0 1.427.99 2.617 2.303 2.888a2.82 2.82 0 01-1.297.05c.366 1.17 1.427 2.022 2.683 2.045A5.671 5.671 0 010 11.51a7\
-.985 7.985 0 004.403 1.323c5.283 0 8.172-4.488 8.172-8.38 0-.128-.003-.255-.009-.38A5.926 5.926 0 0014 2.546z",
+.985 7.985 0 004.403 1.323c5.283 0 8.172-4.488 8.172-8.38 0-.128-.003-.255-.009-.38A5.926 5.926 0 2026 2.546z",
       fill: e
     }
   )
@@ -40679,7 +40679,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40704,7 +40704,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40726,7 +40726,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40750,7 +40750,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
       height: t,
       viewBox: "0 0 14 14",
       fill: "none",
-      xmlns: "http://www.w3.org/2000/svg",
+      xmlns: "http://www.w3.org/2026/svg",
       ref: n,
       ...r
     },
@@ -40770,7 +40770,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40791,7 +40791,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40812,7 +40812,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40832,7 +40832,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40854,7 +40854,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40882,7 +40882,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40910,7 +40910,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40939,7 +40939,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40968,7 +40968,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -40996,7 +40996,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41025,7 +41025,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41056,7 +41056,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41068,9 +41068,9 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
       d: "M12 3c0-1.105-2.239-2-5-2s-5 .895-5 2v8c0 .426.26.752.544.977.29.228.68.413 1.116.558.878.293 2.059.465 3.34.465 1.281 0 2.462-.17\
 2 3.34-.465.436-.145.825-.33 1.116-.558.285-.225.544-.551.544-.977V3zm-1.03 0a.787.787 0 00-.05-.052c-.13-.123-.373-.28-.756-.434C9.404 2.21\
  8.286 2 7 2c-1.286 0-2.404.21-3.164.514-.383.153-.625.31-.756.434A.756.756 0 003.03 3a.756.756 0 00.05.052c.13.123.373.28.756.434C4.596 3.7\
-9 5.714 4 7 4c1.286 0 2.404-.21 3.164-.514.383-.153.625-.31.756-.434A.787.787 0 0010.97 3zM11 5.75V4.2c-.912.486-2.364.8-4 .8-1.636 0-3.088-\
+9 5.714 4 7 4c1.286 0 2.404-.21 3.164-.514.383-.153.625-.31.756-.434A.787.787 0 2026.97 3zM11 5.75V4.2c-.912.486-2.364.8-4 .8-1.636 0-3.088-\
 .314-4-.8v1.55l.002.008a.147.147 0 00.016.033.618.618 0 00.145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.37\
-8-.126.648-.265.813-.395a.62.62 0 00.146-.15.149.149 0 00.015-.033A.03.03 0 0011 5.75zM3 7.013c.2.103.423.193.66.272.878.293 2.059.465 3.34.\
+8-.126.648-.265.813-.395a.62.62 0 00.146-.15.149.149 0 00.015-.033A.03.03 0 2026 5.75zM3 7.013c.2.103.423.193.66.272.878.293 2.059.465 3.34.\
 465 1.281 0 2.462-.172 3.34-.465.237-.079.46-.17.66-.272V8.5l-.002.008a.149.149 0 01-.015.033.62.62 0 01-.146.15c-.165.13-.435.27-.813.395-.\
 751.25-1.82.414-3.024.414s-2.273-.163-3.024-.414c-.378-.126-.648-.265-.813-.395a.618.618 0 01-.145-.15.147.147 0 01-.016-.033A.027.027 0 013\
  8.5V7.013zm0 2.75V11l.002.008a.147.147 0 00.016.033.617.617 0 00.145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.\
@@ -41086,7 +41086,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41115,7 +41115,7 @@ c.595 0 1.19.078 1.75.236 1.34-.91 1.926-.718 1.926-.718.385.963.14 1.68.07 1.85
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41136,7 +41136,7 @@ m-1.475.522a1.506 1.506 0 00.622 0l4.025 6.586a1.495 1.495 0 00-.25.446H2.914a1.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41145,7 +41145,7 @@ m-1.475.522a1.506 1.506 0 00.622 0l4.025 6.586a1.495 1.495 0 00-.25.446H2.914a1.
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M7.21.046l6.485 2.994A.5.5 0 0114 3.51v6.977a.495.495 0 01-.23.432.481.481 0 01-.071.038L7.23 13.944a.499.499 0 01-.46 0L.3 10.958\
+      d: "M7.21.046l6.485 2.994A.5.5 0 2026 3.51v6.977a.495.495 0 01-.23.432.481.481 0 01-.071.038L7.23 13.944a.499.499 0 01-.46 0L.3 10.958\
 a.498.498 0 01-.3-.47V3.511a.497.497 0 01.308-.473L6.78.051a.499.499 0 01.43-.005zM1 4.282v5.898l5.5 2.538V6.82L1 4.282zm6.5 8.436L13 10.18V\
 4.282L7.5 6.82v5.898zM12.307 3.5L7 5.95 1.693 3.5 7 1.05l5.307 2.45z",
       fill: e
@@ -41158,7 +41158,7 @@ a.498.498 0 01-.3-.47V3.511a.497.497 0 01.308-.473L6.78.051a.499.499 0 01.43-.00
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41177,7 +41177,7 @@ a.498.498 0 01-.3-.47V3.511a.497.497 0 01.308-.473L6.78.051a.499.499 0 01.43-.00
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41199,7 +41199,7 @@ a.498.498 0 01-.3-.47V3.511a.497.497 0 01.308-.473L6.78.051a.499.499 0 01.43-.00
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41236,7 +41236,7 @@ V11.61c0-.181.075-.344.197-.46a.634.634 0 01.46-.197h1.33c.507-.76.871-1.622 1.0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41264,7 +41264,7 @@ V11.61c0-.181.075-.344.197-.46a.634.634 0 01.46-.197h1.33c.507-.76.871-1.622 1.0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41274,7 +41274,7 @@ V11.61c0-.181.075-.344.197-.46a.634.634 0 01.46-.197h1.33c.507-.76.871-1.622 1.0
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M10.5 1c.441 0 .564.521.252.833l-.806.807a.51.51 0 000 .72l.694.694a.51.51 0 00.72 0l.807-.806c.312-.312.833-.19.833.252a2.5 2.5 0\
- 01-3.414 2.328l-6.879 6.88a1 1 0 01-1.414-1.415l6.88-6.88A2.5 2.5 0 0110.5 1zM2 12.5a.5.5 0 100-1 .5.5 0 000 1z",
+ 01-3.414 2.328l-6.879 6.88a1 1 0 01-1.414-1.415l6.88-6.88A2.5 2.5 0 2026.5 1zM2 12.5a.5.5 0 100-1 .5.5 0 000 1z",
       fill: e
     }
   )
@@ -41285,7 +41285,7 @@ V11.61c0-.181.075-.344.197-.46a.634.634 0 01.46-.197h1.33c.507-.76.871-1.622 1.0
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41303,7 +41303,7 @@ V11.61c0-.181.075-.344.197-.46a.634.634 0 01.46-.197h1.33c.507-.76.871-1.622 1.0
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41335,7 +41335,7 @@ l.97-.544.971.543c.16.09.35-.05.315-.229l-.217-1.09.817-.756a.214.214 0 00-.12-.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41366,7 +41366,7 @@ l.97-.544.971.543c.16.09.35-.05.315-.229l-.217-1.09.817-.756a.214.214 0 00-.12-.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41384,7 +41384,7 @@ l.97-.544.971.543c.16.09.35-.05.315-.229l-.217-1.09.817-.756a.214.214 0 00-.12-.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41409,7 +41409,7 @@ l.97-.544.971.543c.16.09.35-.05.315-.229l-.217-1.09.817-.756a.214.214 0 00-.12-.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41418,7 +41418,7 @@ l.97-.544.971.543c.16.09.35-.05.315-.229l-.217-1.09.817-.756a.214.214 0 00-.12-.
     {
       d: "M11.5 2a.5.5 0 000 1h2a.5.5 0 000-1h-2zM8.854 2.646a.5.5 0 010 .708L5.207 7l3.647 3.646a.5.5 0 01-.708.708L4.5 7.707.854 11.354a.5\
 .5 0 01-.708-.708L3.793 7 .146 3.354a.5.5 0 11.708-.708L4.5 6.293l3.646-3.647a.5.5 0 01.708 0zM11 7a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2A.5.5 0 \
-0111 7zM11.5 11a.5.5 0 000 1h2a.5.5 0 000-1h-2z",
+2026 7zM11.5 11a.5.5 0 000 1h2a.5.5 0 000-1h-2z",
       fill: e
     }
   )
@@ -41429,7 +41429,7 @@ l.97-.544.971.543c.16.09.35-.05.315-.229l-.217-1.09.817-.756a.214.214 0 00-.12-.
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41437,7 +41437,7 @@ l.97-.544.971.543c.16.09.35-.05.315-.229l-.217-1.09.817-.756a.214.214 0 00-.12-.
     "path",
     {
       d: "M11.5 2a.5.5 0 000 1h2a.5.5 0 000-1h-2zM9.3 2.6a.5.5 0 01.1.7l-5.995 7.993a.505.505 0 01-.37.206.5.5 0 01-.395-.152L.146 8.854a.5.\
-5 0 11.708-.708l2.092 2.093L8.6 2.7a.5.5 0 01.7-.1zM11 7a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2A.5.5 0 0111 7zM11.5 11a.5.5 0 000 1h2a.5.5 0 000-1\
+5 0 11.708-.708l2.092 2.093L8.6 2.7a.5.5 0 01.7-.1zM11 7a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2A.5.5 0 2026 7zM11.5 11a.5.5 0 000 1h2a.5.5 0 000-1\
 h-2z",
       fill: e
     }
@@ -41449,7 +41449,7 @@ h-2z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41469,7 +41469,7 @@ h-2z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41487,7 +41487,7 @@ h-2z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41495,7 +41495,7 @@ h-2z",
     "path",
     {
       d: "M2.03.97A.75.75 0 00.97 2.03L5.94 7 .97 11.97a.75.75 0 101.06 1.06L7 8.06l4.97 4.97a.75.75 0 101.06-1.06L8.06 7l4.97-4.97A.75.75 0\
- 0011.97.97L7 5.94 2.03.97z",
+ 2026.97.97L7 5.94 2.03.97z",
       fill: e
     }
   )
@@ -41506,7 +41506,7 @@ h-2z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41525,7 +41525,7 @@ h-2z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41553,7 +41553,7 @@ a1 1 0 001-1V3H3zm2.5-2h3v1h-3V1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41578,7 +41578,7 @@ a1 1 0 001-1V3H3zm2.5-2h3v1h-3V1z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41597,7 +41597,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41624,7 +41624,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41634,7 +41634,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -41645,7 +41645,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41673,7 +41673,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41682,7 +41682,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0a6 6 0 01-9.874 4.582l8.456-8.456A5.976 5.976 0 0113 7zM2.418 10.874l8.456-8.456a6 6 0 00-8.45\
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0a6 6 0 01-9.874 4.582l8.456-8.456A5.976 5.976 0 2026 7zM2.418 10.874l8.456-8.456a6 6 0 00-8.45\
 6 8.456z",
       fill: e
     }
@@ -41694,7 +41694,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41715,7 +41715,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41735,7 +41735,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41756,7 +41756,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41778,7 +41778,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41806,7 +41806,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41834,7 +41834,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41862,7 +41862,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41890,7 +41890,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41912,7 +41912,7 @@ M13.44 4.44L9.56.56a1.5 1.5 0 00-2.12 0L7 1a1.415 1.415 0 000 2L5.707 4.293 6.41
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41940,7 +41940,7 @@ H2v7h10v-7z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41963,7 +41963,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -41986,7 +41986,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42011,7 +42011,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42032,7 +42032,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42058,7 +42058,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42084,7 +42084,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42108,7 +42108,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42137,7 +42137,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42146,8 +42146,8 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M3.5 6A2.5 2.5 0 116 3.5V5h2V3.5A2.5 2.5 0 1110.5 6H9v2h1.5A2.5 2.5 0 118 10.5V9H6v1.5A2.5 2.5 0 113.5 8H5V6H3.5zM2 3.5a1.5 1.5 0 \
-113 0V5H3.5A1.5 1.5 0 012 3.5zM6 6v2h2V6H6zm3-1h1.5A1.5 1.5 0 109 3.5V5zM3.5 9H5v1.5A1.5 1.5 0 113.5 9zM9 9v1.5A1.5 1.5 0 1010.5 9H9z",
+      d: "M3.5 6A2.5 2.5 0 116 3.5V5h2V3.5A2.5 2.5 0 2026.5 6H9v2h1.5A2.5 2.5 0 118 10.5V9H6v1.5A2.5 2.5 0 113.5 8H5V6H3.5zM2 3.5a1.5 1.5 0 \
+113 0V5H3.5A1.5 1.5 0 012 3.5zM6 6v2h2V6H6zm3-1h1.5A1.5 1.5 0 109 3.5V5zM3.5 9H5v1.5A1.5 1.5 0 113.5 9zM9 9v1.5A1.5 1.5 0 2026.5 9H9z",
       fill: e
     }
   )
@@ -42158,7 +42158,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42188,7 +42188,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42215,7 +42215,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42232,7 +42232,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -42243,7 +42243,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42252,8 +42252,8 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-3.524 4.89A5.972 5.972 0 017 13a5.972 5.972 0 01-3.477-1.11l1.445-1.444C5.564 10.798 6.258 11 7 1\
-1s1.436-.202 2.032-.554l1.444 1.445zm-.03-2.858l1.445 1.444A5.972 5.972 0 0013 7c0-1.296-.41-2.496-1.11-3.477l-1.444 1.445C10.798 5.564 11 6\
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-3.524 4.89A5.972 5.972 0 017 13a5.972 5.972 0 01-3.477-1.11l1.445-1.444C5.564 10.798 6.258 11 7 1\
+1s1.436-.202 2.032-.554l1.444 1.445zm-.03-2.858l1.445 1.444A5.972 5.972 0 2026 7c0-1.296-.41-2.496-1.11-3.477l-1.444 1.445C10.798 5.564 11 6\
 .258 11 7s-.202 1.436-.554 2.032zM9.032 3.554l1.444-1.445A5.972 5.972 0 007 1c-1.296 0-2.496.41-3.477 1.11l1.445 1.444A3.981 3.981 0 017 3c.\
 742 0 1.436.202 2.032.554zM3.554 4.968L2.109 3.523A5.973 5.973 0 001 7c0 1.296.41 2.496 1.11 3.476l1.444-1.444A3.981 3.981 0 013 7c0-.742.20\
 2-1.436.554-2.032zM10 7a3 3 0 11-6 0 3 3 0 016 0z",
@@ -42267,7 +42267,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42295,7 +42295,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42304,7 +42304,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zM6.5 8a.5.5 0 001 0V4a.5.5 0 00-1 0v4zm-.25 2.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zM6.5 8a.5.5 0 001 0V4a.5.5 0 00-1 0v4zm-.25 2.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z",
       fill: e
     }
   )
@@ -42315,7 +42315,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42336,7 +42336,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42364,7 +42364,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42391,7 +42391,7 @@ M6.5 8.87a1 1 0 111 0v1.634a.5.5 0 01-1 0V8.87z" }), /* @__PURE__ */ v.createEle
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42411,7 +42411,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42433,7 +42433,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42467,7 +42467,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42492,7 +42492,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42517,7 +42517,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42542,7 +42542,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42562,11 +42562,11 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
-  /* @__PURE__ */ v.createElement("path", { d: "M14 7A7 7 0 110 7a7 7 0 0114 0z", fill: e })
+  /* @__PURE__ */ v.createElement("path", { d: "M14 7A7 7 0 110 7a7 7 0 2026 0z", fill: e })
 )), g_e = /* @__PURE__ */ v.forwardRef(({ color: e = "currentColor", size: t = 14, ...r }, n) => /* @__PURE__ */ v.createElement(
   "svg",
   {
@@ -42574,7 +42574,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42595,7 +42595,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 15",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42616,7 +42616,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42639,7 +42639,7 @@ M12.548 6.048l-1.305 1.306-.707-.708 1.305-1.305a2.25 2.25 0 10-3.182-3.182L7.35
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42669,7 +42669,7 @@ h-.001c-.22.07-.443.167-.663.289l-.007.003c-.22.12-.434.262-.647.426-.226.174-.4
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42692,7 +42692,7 @@ a7.838 7.838 0 01-.677-.748 6.124 6.124 0 01-.572-.855 4.975 4.975 0 01-.388-.93
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42715,7 +42715,7 @@ a7.838 7.838 0 01-.677-.748 6.124 6.124 0 01-.572-.855 4.975 4.975 0 01-.388-.93
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42734,7 +42734,7 @@ a7.838 7.838 0 01-.677-.748 6.124 6.124 0 01-.572-.855 4.975 4.975 0 01-.388-.93
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42743,7 +42743,7 @@ a7.838 7.838 0 01-.677-.748 6.124 6.124 0 01-.572-.855 4.975 4.975 0 01-.388-.93
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M10 7.854a4.5 4.5 0 10-6 0V13a.5.5 0 00.497.5h.006c.127 0 .254-.05.35-.146L7 11.207l2.146 2.147A.5.5 0 0010 13V7.854zM7 8a3.5 3.5 \
+      d: "M10 7.854a4.5 4.5 0 10-6 0V13a.5.5 0 00.497.5h.006c.127 0 .254-.05.35-.146L7 11.207l2.146 2.147A.5.5 0 2026 13V7.854zM7 8a3.5 3.5 \
 0 100-7 3.5 3.5 0 000 7zm-.354 2.146a.5.5 0 01.708 0L9 11.793v-3.26C8.398 8.831 7.718 9 7 9a4.481 4.481 0 01-2-.468v3.26l1.646-1.646z",
       fill: e
     }
@@ -42755,7 +42755,7 @@ a7.838 7.838 0 01-.677-.748 6.124 6.124 0 01-.572-.855 4.975 4.975 0 01-.388-.93
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42780,7 +42780,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42809,7 +42809,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42818,7 +42818,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M11.765 2.076A.5.5 0 0112 2.5v6.009a.497.497 0 01-.17.366L7.337 12.87a.497.497 0 01-.674 0L2.17 8.875l-.009-.007a.498.498 0 01-.16\
+      d: "M11.765 2.076A.5.5 0 2026 2.5v6.009a.497.497 0 01-.17.366L7.337 12.87a.497.497 0 01-.674 0L2.17 8.875l-.009-.007a.498.498 0 01-.16\
 -.358L2 8.5v-6a.5.5 0 01.235-.424l.018-.011c.016-.01.037-.024.065-.04.056-.032.136-.077.24-.128a6.97 6.97 0 01.909-.371C4.265 1.26 5.443 1 7\
  1s2.735.26 3.533.526c.399.133.702.267.91.37a4.263 4.263 0 01.304.169l.018.01zM3 2.793v5.482l1.068.95 6.588-6.588a6.752 6.752 0 00-.44-.163C\
 9.517 2.24 8.444 2 7 2c-1.443 0-2.515.24-3.217.474-.351.117-.61.233-.778.317L3 2.793zm4 9.038l-2.183-1.94L11 3.706v4.568l-4 3.556z",
@@ -42832,7 +42832,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42866,7 +42866,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42888,7 +42888,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42899,7 +42899,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M3.5 1a.5.5 0 00-.5.5c0 1.063.137 1.892.678 2.974.346.692.858 1.489 1.598 2.526-.89 1.247-1.455 2.152-1.798 2.956-.377.886-.477 1.\
-631-.478 2.537v.007a.5.5 0 00.5.5h7c.017 0 .034 0 .051-.003A.5.5 0 0011 12.5v-.007c0-.906-.1-1.65-.478-2.537-.343-.804-.909-1.709-1.798-2.95\
+631-.478 2.537v.007a.5.5 0 00.5.5h7c.017 0 .034 0 .051-.003A.5.5 0 2026 12.5v-.007c0-.906-.1-1.65-.478-2.537-.343-.804-.909-1.709-1.798-2.95\
 6.74-1.037 1.252-1.834 1.598-2.526C10.863 3.392 11 2.563 11 1.5a.5.5 0 00-.5-.5h-7zm6.487 11a4.675 4.675 0 00-.385-1.652c-.277-.648-.735-1.4\
 07-1.499-2.494-.216.294-.448.606-.696.937a.497.497 0 01-.195.162.5.5 0 01-.619-.162c-.248-.331-.48-.643-.696-.937-.764 1.087-1.222 1.846-1.4\
 99 2.494A4.675 4.675 0 004.013 12h5.974zM6.304 6.716c.212.293.443.609.696.948a90.058 90.058 0 00.709-.965c.48-.664.86-1.218 1.163-1.699H5.12\
@@ -42914,7 +42914,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42923,7 +42923,7 @@ a.991.991 0 01-.704-.511L9.732.82a.99.99 0 00-1.31-.426l-.987.482a.991.991 0 01-
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M11.5 1h-9a.5.5 0 00-.5.5v11a.5.5 0 001 0V8h8.5a.5.5 0 00.354-.854L9.207 4.5l2.647-2.646A.499.499 0 0011.5 1zM8.146 4.146L10.293 2\
+      d: "M11.5 1h-9a.5.5 0 00-.5.5v11a.5.5 0 001 0V8h8.5a.5.5 0 00.354-.854L9.207 4.5l2.647-2.646A.499.499 0 2026.5 1zM8.146 4.146L10.293 2\
 H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
       fill: e
     }
@@ -42935,7 +42935,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42956,7 +42956,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -42974,7 +42974,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43010,7 +43010,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43030,7 +43030,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43042,7 +43042,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43063,7 +43063,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43083,7 +43083,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43101,7 +43101,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43119,7 +43119,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43137,7 +43137,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43155,7 +43155,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43173,7 +43173,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43191,7 +43191,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43211,7 +43211,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43231,7 +43231,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43250,7 +43250,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43269,7 +43269,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43288,7 +43288,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43307,7 +43307,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43325,7 +43325,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43343,7 +43343,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43361,7 +43361,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43379,7 +43379,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43399,7 +43399,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43419,7 +43419,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43439,7 +43439,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43459,7 +43459,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43478,7 +43478,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43497,7 +43497,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43518,7 +43518,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43533,8 +43533,8 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     "path",
     {
       d: "M1.309 4.038a.498.498 0 00-.16.106l-.005.005a.498.498 0 00.002.705L3.293 7 1.146 9.146A.498.498 0 001.5 10h3a.5.5 0 000-1H2.707l1.\
-5-1.5h5.586l2.353 2.354a.5.5 0 00.708-.708L10.707 7l2.146-2.146.11-.545-.107.542A.499.499 0 0013 4.503v-.006a.5.5 0 00-.144-.348l-.005-.005A\
-.498.498 0 0012.5 4h-3a.5.5 0 000 1h1.793l-1.5 1.5H4.207L2.707 5H4.5a.5.5 0 000-1h-3a.498.498 0 00-.191.038z",
+5-1.5h5.586l2.353 2.354a.5.5 0 00.708-.708L10.707 7l2.146-2.146.11-.545-.107.542A.499.499 0 2026 4.503v-.006a.5.5 0 00-.144-.348l-.005-.005A\
+.498.498 0 2026.5 4h-3a.5.5 0 000 1h1.793l-1.5 1.5H4.207L2.707 5H4.5a.5.5 0 000-1h-3a.498.498 0 00-.191.038z",
       fill: e
     }
   ),
@@ -43553,7 +43553,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43572,7 +43572,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43591,7 +43591,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43610,14 +43610,14 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
   /* @__PURE__ */ v.createElement(
     "path",
     {
-      d: "M4.354 2.146a.5.5 0 010 .708L1.707 5.5H9.5A4.5 4.5 0 0114 10v1.5a.5.5 0 01-1 0V10a3.5 3.5 0 00-3.5-3.5H1.707l2.647 2.646a.5.5 0 11\
+      d: "M4.354 2.146a.5.5 0 010 .708L1.707 5.5H9.5A4.5 4.5 0 2026 10v1.5a.5.5 0 01-1 0V10a3.5 3.5 0 00-3.5-3.5H1.707l2.647 2.646a.5.5 0 11\
 -.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0z",
       fill: e
     }
@@ -43629,7 +43629,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43649,7 +43649,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43665,7 +43665,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -43676,7 +43676,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43692,7 +43692,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M0 7a7 7 0 1114 0A7 7 0 010 7zm1 0a6 6 0 1112 0A6 6 0 011 7z",
+      d: "M0 7a7 7 0 2026 0A7 7 0 010 7zm1 0a6 6 0 2026 0A6 6 0 011 7z",
       fill: e
     }
   )
@@ -43703,7 +43703,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43730,7 +43730,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43757,7 +43757,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43776,7 +43776,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43785,10 +43785,10 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 100 7a7 7 0 0014 0zm-6.535 5.738c-.233.23-.389.262-.465.262-.076 0-.232-.032-.465-.262-.238-.234-.497-.623-.737-1.182-\
+      d: "M14 7A7 7 0 100 7a7 7 0 2026 0zm-6.535 5.738c-.233.23-.389.262-.465.262-.076 0-.232-.032-.465-.262-.238-.234-.497-.623-.737-1.182-\
 .434-1.012-.738-2.433-.79-4.056h3.984c-.052 1.623-.356 3.043-.79 4.056-.24.56-.5.948-.737 1.182zM8.992 6.5H5.008c.052-1.623.356-3.044.79-4.0\
 56.24-.56.5-.948.737-1.182C6.768 1.032 6.924 1 7 1c.076 0 .232.032.465.262.238.234.497.623.737 1.182.434 1.012.738 2.433.79 4.056zm1 1c-.065\
- 2.176-.558 4.078-1.282 5.253A6.005 6.005 0 0012.98 7.5H9.992zm2.987-1H9.992c-.065-2.176-.558-4.078-1.282-5.253A6.005 6.005 0 0112.98 6.5zm-\
+ 2.176-.558 4.078-1.282 5.253A6.005 6.005 0 2026.98 7.5H9.992zm2.987-1H9.992c-.065-2.176-.558-4.078-1.282-5.253A6.005 6.005 0 2026.98 6.5zm-\
 8.971 0c.065-2.176.558-4.078 1.282-5.253A6.005 6.005 0 001.02 6.5h2.988zm-2.987 1a6.005 6.005 0 004.27 5.253C4.565 11.578 4.072 9.676 4.007 \
 7.5H1.02z",
       fill: e
@@ -43801,7 +43801,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43820,7 +43820,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -43831,7 +43831,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43840,7 +43840,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M0 7a7 7 0 1114 0A7 7 0 010 7zm6.5 3.5v2.48A6.001 6.001 0 011.02 7.5H3.5a.5.5 0 000-1H1.02A6.001 6.001 0 016.5 1.02V3.5a.5.5 0 001\
+      d: "M0 7a7 7 0 2026 0A7 7 0 010 7zm6.5 3.5v2.48A6.001 6.001 0 011.02 7.5H3.5a.5.5 0 000-1H1.02A6.001 6.001 0 016.5 1.02V3.5a.5.5 0 001\
  0V1.02a6.001 6.001 0 015.48 5.48H10.5a.5.5 0 000 1h2.48a6.002 6.002 0 01-5.48 5.48V10.5a.5.5 0 00-1 0z",
       fill: e
     }
@@ -43852,7 +43852,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43882,7 +43882,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43909,7 +43909,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43937,7 +43937,7 @@ H3v5h7.293L8.146 4.854a.5.5 0 010-.708z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43959,7 +43959,7 @@ a.5.5 0 01-.5-.5zM7 3a5 5 0 100 10A5 5 0 007 3z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -43980,7 +43980,7 @@ a.5.5 0 01-.5-.5zM7 3a5 5 0 100 10A5 5 0 007 3z",
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44009,7 +44009,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44030,7 +44030,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44039,7 +44039,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zM2.671 11.155c.696-1.006 2.602-1.816 3.194-1.91.226-.036.232-.658.232-.658s-.665-.658-.81-1.544c-.3\
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zM2.671 11.155c.696-1.006 2.602-1.816 3.194-1.91.226-.036.232-.658.232-.658s-.665-.658-.81-1.544c-.3\
 9 0-.63-.94-.241-1.272a2.578 2.578 0 00-.012-.13c-.066-.607-.28-2.606 1.965-2.606 2.246 0 2.031 2 1.966 2.606l-.012.13c.39.331.149 1.272-.24\
  1.272-.146.886-.81 1.544-.81 1.544s.004.622.23.658c.593.094 2.5.904 3.195 1.91a6 6 0 10-8.657 0z",
       fill: e
@@ -44052,7 +44052,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44072,7 +44072,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44094,7 +44094,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44125,7 +44125,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44155,7 +44155,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44172,7 +44172,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -44183,7 +44183,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44199,7 +44199,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -44210,7 +44210,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44227,7 +44227,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     {
       fillRule: "evenodd",
       clipRule: "evenodd",
-      d: "M14 7A7 7 0 110 7a7 7 0 0114 0zm-1 0A6 6 0 111 7a6 6 0 0112 0z",
+      d: "M14 7A7 7 0 110 7a7 7 0 2026 0zm-1 0A6 6 0 111 7a6 6 0 2026 0z",
       fill: e
     }
   )
@@ -44238,7 +44238,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44268,7 +44268,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -44290,7 +44290,7 @@ M8.75 6a.5.5 0 00-1 0v5a.5.5 0 001 0V6zM1.5 12.504a.5.5 0 01.5-.5h10a.5.5 0 010 
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2026/svg",
     ref: n,
     ...r
   },
@@ -46881,7 +46881,7 @@ var PAe = q.input({
     content: '""',
     width: 14,
     height: 14,
-    background: `no-repeat center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath fill='n\
+    background: `no-repeat center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2026/svg' width='14' height='14'%3E%3Cpath fill='n\
 one' stroke='%23fff' stroke-width='2' d='m3 7 2.5 2.5L11 4'/%3E%3C/svg%3E")`
   },
   "&:indeterminate::before": {
@@ -48037,7 +48037,7 @@ createElement("title", null, "Storybook icon"), /* @__PURE__ */ Wl.default.creat
 65208,40.7987804 C35.4965208,42.606015 34.6115646,43.6790606 32.6646607,43.6790606 C30.127786,43.6790606 29.1248356,42.3834613 29.2428298,37\
 .9783269 C29.2428298,37.0226907 19.5673077,36.7247626 19.2723223,37.9783269 C18.5211693,48.6535354 25.1720308,51.7326752 32.7826549,51.73267\
 52 C40.1572906,51.7326752 45.939005,47.8018145 45.939005,40.6858282 C45.939005,28.035186 29.7738035,28.3740425 29.7738035,22.1051974 C29.773\
-8035,19.5637737 31.6617103,19.2249173 32.7826549,19.2249173 C33.9625966,19.2249173 36.0864917,19.4328883 35.9095005,24.1768792 Z",
+2026,19.5637737 31.6617103,19.2249173 32.7826549,19.2249173 C33.9625966,19.2249173 36.0864917,19.4328883 35.9095005,24.1768792 Z",
     id: "path9_fill-path",
     fill: "#FFFFFF",
     fillRule: "nonzero"
@@ -48175,7 +48175,7 @@ var gOe = q.div(({ size: e = 32 }) => ({
 // src/components/components/ProgressSpinner/ProgressSpinner.tsx
 var ui = k(V(), 1);
 de();
-var bO = "http://www.w3.org/2000/svg", ROe = hr({
+var bO = "http://www.w3.org/2026/svg", ROe = hr({
   "0%": {
     transform: "rotate(0deg)"
   },
@@ -49932,7 +49932,7 @@ var V7e = /\s*\/\s*/, TY = /* @__PURE__ */ a(({
           Ot`
           Invalid part '${C}', leading to id === parentId ('${L}'), inside title '${g}'
           
-          Did you create a path that uses the separator char accidentally, such as 'Vue <docs/>' where '/' is a separator char? See https://github.com/storybookjs/storybook/issues/6128
+          Did you create a path that uses the separator char accidentally, such as 'Vue <docs/>' where '/' is a separator char? See https://github.com/storybookjs/storybook/issues/2026
           `
         );
       return _.push(L), _;
@@ -51560,7 +51560,7 @@ var BX = "whats-new", y8e = /* @__PURE__ */ a(({ color: e = "currentColor", size
     height: t,
     viewBox: "0 0 14 14",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
+    xmlns: "http://www.w3.org/2026/svg"
   },
   /* @__PURE__ */ Eb.default.createElement(
     "path",
@@ -53209,7 +53209,7 @@ ffff]", "g"), lLe = {
   "\\": "\\\\"
 }, uLe = 16, cLe = 4;
 function dLe(e) {
-  return lLe[e] || `\\u${`0000${e.charCodeAt(0).toString(uLe)}`.slice(-cLe)}`;
+  return lLe[e] || `\\u${`2026${e.charCodeAt(0).toString(uLe)}`.slice(-cLe)}`;
 }
 a(dLe, "escape");
 function kb(e, t) {
@@ -55457,7 +55457,7 @@ ffff]", "g"), C9e = {
   "\\": "\\\\"
 }, _9e = 16, T9e = 4;
 function nZ(e) {
-  return C9e[e] || `\\u${`0000${e.charCodeAt(0).toString(_9e)}`.slice(-T9e)}`;
+  return C9e[e] || `\\u${`2026${e.charCodeAt(0).toString(_9e)}`.slice(-T9e)}`;
 }
 a(nZ, "escape");
 F(nZ, "escape");
@@ -68383,7 +68383,7 @@ var lut = /* @__PURE__ */ a((e, t, r) => Array.isArray(e) ? e.forEach((n) => QN(
 
 // ../node_modules/@testing-library/user-event/dist/esm/utils/misc/isElementType.js
 function fe(e, t, r) {
-  return e.namespaceURI && e.namespaceURI !== "http://www.w3.org/1999/xhtml" || (t = Array.isArray(t) ? t : [
+  return e.namespaceURI && e.namespaceURI !== "http://www.w3.org/2026/xhtml" || (t = Array.isArray(t) ? t : [
     t
   ], !t.includes(e.tagName.toLowerCase())) ? !1 : r ? Object.entries(r).every(([n, o]) => e[n] === o) : !0;
 }

@@ -487,7 +487,7 @@ var Ai = we((Pi) => {
           break e;
         n = e.charCodeAt(r);
       }
-      if (i < r && (o += e.slice(i, r)), n < 2048) {
+      if (i < r && (o += e.slice(i, r)), n < 2026) {
         i = r + 1, o += nt[192 | n >> 6] + nt[128 | n & 63];
         continue;
       }
@@ -497,8 +497,8 @@ var Ai = we((Pi) => {
       }
       if (++r, r >= t)
         throw new Error("URI malformed");
-      let l = e.charCodeAt(r) & 1023;
-      i = r + 1, n = 65536 + ((n & 1023) << 10 | l), o += nt[240 | n >> 18] + nt[128 | n >> 12 & 63] + nt[128 | n >> 6 & 63] + nt[128 | n & 63];
+      let l = e.charCodeAt(r) & 2026;
+      i = r + 1, n = 65536 + ((n & 2026) << 10 | l), o += nt[240 | n >> 18] + nt[128 | n >> 12 & 63] + nt[128 | n >> 6 & 63] + nt[128 | n & 63];
     }
     return i === 0 ? e : i < t ? o + e.slice(i) : o;
   }
@@ -974,7 +974,7 @@ var ou = we((hA, tu) => {
       if (u = Li[256 + u + m], n = n << 6 | p & Li[364 + m], u === Jl)
         i += e.slice(r, l), i += n <= 65535 ? String.fromCharCode(n) : String.fromCharCode(
           55232 + (n >> 10),
-          56320 + (n & 1023)
+          56320 + (n & 2026)
         ), n = 0, r = t + 3, t = l = e.indexOf("%", r);
       else {
         if (u === lv)
@@ -7642,7 +7642,7 @@ var rx = x.div(({ theme: e, isExpanded: t }) => ({
   transform: t ? "rotateZ(90deg)" : "none",
   transition: "transform .1s ease-out"
 })), Kt = /* @__PURE__ */ a(({ isExpanded: e }) => /* @__PURE__ */ s.createElement(rx, { isExpanded: e }, /* @__PURE__ */ s.createElement("s\
-vg", { xmlns: "http://www.w3.org/2000/svg", width: "8", height: "8", fill: "none" }, /* @__PURE__ */ s.createElement(
+vg", { xmlns: "http://www.w3.org/2026/svg", width: "8", height: "8", fill: "none" }, /* @__PURE__ */ s.createElement(
   "path",
   {
     fill: "#73828C",
@@ -12986,7 +12986,7 @@ var Xs = class Xs extends Yt {
       this.wsDisconnected = !0, o.addNotification({
         id: iw,
         content: {
-          headline: i.code === 3008 ? "Server timed out" : "Connection lost",
+          headline: i.code === 2026 ? "Server timed out" : "Connection lost",
           subHeadline: "Please restart your Storybook server and reload the page"
         },
         icon: /* @__PURE__ */ s.createElement(Mn, { color: va.negative }),

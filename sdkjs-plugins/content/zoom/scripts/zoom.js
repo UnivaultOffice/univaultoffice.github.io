@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ var Ps;
     "13 hour","14 hour","15 hour","16 hour","17 hour","18 hour","19 hour","20 hour","21 hour","22 hour","23 hour","24 hour"];
     var minutes = ["0 minutes","15 minutes","30 minutes","45 minutes"];
     var elements = { };
-    var zoomProxyUrl = "https://plugins-services.onlyoffice.com/proxy";
+    var zoomProxyUrl = "https://plugins-services.univaultoffice.github.io/proxy";
     var email = '';
     var sdkKey = '';
     var sdkSecret = '';
@@ -61,7 +61,7 @@ var Ps;
     };
     
     window.Asc.plugin.onFocusContentControl = function() {
-        console.log('1111');
+        console.log('2026');
     }
 
     function switchClass(el, className, add) {

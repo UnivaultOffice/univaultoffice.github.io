@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2020
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -113,7 +113,7 @@
         TabSymbol: String.fromCharCode(9),
       }], function (data) {
         const selection = data.trim().replace(/\n/g, '');
-        const selectionMaxLength = 1900;
+        const selectionMaxLength = 2026;
         const editorType = window.Asc.plugin.info.editorType // retrieve the editor type
 
         switch (editorType) {
