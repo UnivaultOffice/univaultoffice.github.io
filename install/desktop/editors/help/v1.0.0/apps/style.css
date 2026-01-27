@@ -1,0 +1,140 @@
+:root {
+  --bg: #f6f4ee;
+  --ink: #1f2428;
+  --muted: #5f6b72;
+  --accent: #1d5b4f;
+  --card: #ffffff;
+  --border: #d8d2c2;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+header {
+  padding: 32px 24px;
+  background: linear-gradient(135deg, #e6efe8, #f8f3e7);
+  border-bottom: 1px solid var(--border);
+}
+
+header.subhead {
+  padding: 24px;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.lead {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+nav a {
+  margin-right: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  padding: 24px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 24px var(--shadow);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.tile {
+  display: block;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--ink);
+  background: #fbfaf6;
+}
+
+.tile:hover {
+  border-color: var(--accent);
+}
+
+.tile-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.tile-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+code {
+  background: #efe8d7;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+ol, ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  header,
+  header.subhead,
+  main {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}

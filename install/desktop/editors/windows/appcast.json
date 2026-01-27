@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0.0",
+  "serviceVersion": "1.0.0.0",
+  "minVersion": "1.0.0.0",
+  "package": {
+    "win_64": {
+      "archive": { "url": "", "url2": "", "md5": "" },
+      "iss": { "url": "", "url2": "", "md5": "", "arguments": "", "maxVersion": "" },
+      "msi": { "url": "", "url2": "", "md5": "", "arguments": "", "maxVersion": "" },
+      "serviceArchive": { "url": "", "url2": "", "md5": "" }
+    }
+  }
+}

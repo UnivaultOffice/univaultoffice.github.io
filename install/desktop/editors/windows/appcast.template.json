@@ -1,0 +1,13 @@
+{
+  "version": "__VERSION__",
+  "serviceVersion": "__SERVICE_VERSION__",
+  "minVersion": "__MIN_VERSION__",
+  "package": {
+    "win_64": {
+      "archive": { "url": "__ARCHIVE_URL__", "url2": "", "md5": "__ARCHIVE_MD5__" },
+      "iss": { "url": "__ISS_URL__", "url2": "", "md5": "__ISS_MD5__", "arguments": "", "maxVersion": "" },
+      "msi": { "url": "__MSI_URL__", "url2": "", "md5": "__MSI_MD5__", "arguments": "", "maxVersion": "" },
+      "serviceArchive": { "url": "__SERVICE_URL__", "url2": "", "md5": "__SERVICE_MD5__" }
+    }
+  }
+}
