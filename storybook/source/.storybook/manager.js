@@ -5,6 +5,6 @@ addons.setConfig({
   theme: {
     ...themes.normal,
     brandImage: './images/logo.svg',
-    brandUrl: 'https://onlyoffice.github.io/',
+    brandUrl: 'https://univaultoffice.github.io/',
   },
 });
