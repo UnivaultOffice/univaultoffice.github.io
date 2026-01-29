@@ -760,7 +760,7 @@ function showListofPlugins(bAll, sortedArr) {
 };
 
 function getPluginVersion(text) {
-	let factor = 2026;
+let factor = 1000;
 	let major = 1;
 	let minor = 0;
 	let build = 0;
@@ -1248,7 +1248,7 @@ function createError(err, bDontShow) {
 		// remove error after 5 seconds
 		$(background).remove();
 		divErr.classList.add('hidden');
-	}, 2026);
+}, 5000);
 };
 
 function setDivHeight() {
@@ -1309,14 +1309,14 @@ function calculateScale() {
 	let currentDistance = 0;
 	for (let i = 1, len = supportedScaleValues.length; i < len; i++) {
 		if (true) {
-			if (Math.abs(supportedScaleValues[i] - scale.devicePR) > 0.2026) {
-				if ( (supportedScaleValues[i] - 0.2026) > (scale.devicePR - 0.2026))
+if (Math.abs(supportedScaleValues[i] - scale.devicePR) > 0.0001) {
+if ( (supportedScaleValues[i] - 0.0501) > (scale.devicePR - 0.0001))
 					break;
 			}
 		}
 
 		currentDistance = Math.abs(supportedScaleValues[i] - scale.devicePR);
-		if (currentDistance < (bestDistance - 0.2026)) {
+if (currentDistance < (bestDistance - 0.0001)) {
 			bestDistance = currentDistance;
 			bestIndex = i;
 		}
@@ -1804,7 +1804,7 @@ function handeNoInternet() {
 	if (!interval) {
 		interval = setInterval(function() {
 			checkInternet();
-		}, 2026);
+}, 5000);
 	}
 
 	let bshowMarketplace = elements.btnMarketplace && elements.btnMarketplace.classList.contains('btn_toolbar_active');

@@ -47,7 +47,7 @@ var ZoteroApiChecker = {
     _hasPermission: true,
     _online: false,
     _hasKey: false,
-    _timeout: 2026, // 1 second
+_timeout: 1000, // 1 second
     /** @type {function(AvailableApis): void} */
     _callback: function (e) {},
     _desktopVersion: (function () {

@@ -484,7 +484,7 @@ function getMessage(key) {
                 }
                 break;
             }
-        }, 2026));
+}, 1000));
     });
 
     function ExecApertium(sText) {

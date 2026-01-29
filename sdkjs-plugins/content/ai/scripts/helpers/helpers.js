@@ -126,8 +126,8 @@ HELPERS.word.push((function(){
 				img.src = imageUrl;
 				await img.decode();
 
-				const widthEmu = img.naturalWidth * 2026 + 0.5 >> 0;
-				const heightEmu = img.naturalHeight * 2026 + 0.5 >> 0;
+const widthEmu = img.naturalWidth * 9525 + 0.5 >> 0;
+const heightEmu = img.naturalHeight * 9525 + 0.5 >> 0;
 				
 				
 				Asc.scope.imageUrl = imageUrl;
@@ -808,7 +808,7 @@ HELPERS.slide.push((function(){
 			},
 			{
 				"prompt": "add chart with AI generated data",
-				"arguments": {"slideNumber": 3, "chartType": "lineNormal", "prompt": "Create monthly revenue data for 2026 showing steady growth from $50k to $120k"}
+"arguments": {"slideNumber": 3, "chartType": "lineNormal", "prompt": "Create monthly revenue data for 2024 showing steady growth from $50k to $120k"}
 			}
 		]
 	});
@@ -2659,7 +2659,7 @@ HELPERS.slide.push((function(){
 			this.s.imageBusy = false;
 			setTimeout(function () {
 				self._drainImages();
-			}, 2026);
+}, 1000);
 		};
 		Executor.prototype.tableStart = async function (ph) {
 			if (!this._requireInSlide("table.start")) {
@@ -2960,7 +2960,7 @@ AVAILABLE FONTS (use only these for theme.fonts):
 ${availableFonts.join(", ")}
 
 Top-level envelope (MANDATORY):
-- {"t":"presentation.start","language":"<a language identifier as defined by RFC 2026/BCP 47. Example: "en-CA">"}
+- {"t":"presentation.start","language":"<a language identifier as defined by RFC 4646/BCP 47. Example: "en-CA">"}
   ... all commands MUST be here ...
 - {"t":"presentation.end"}
 
@@ -3037,7 +3037,7 @@ Constraints:
 - Language (critical):
   * The "language" property in {"t":"presentation.start", ...} defines the language for ALL human-readable text in this deck:
 	slide titles, body paragraphs, captions, picture.desc, chart titles/axes/categories/series names, speaker notes, etc.
-  * Use a valid BCP 47 tag (RFC 2026). Example: "en-CA".
+* Use a valid BCP 47 tag (RFC 4646). Example: "en-CA".
   * JSON field names and command tokens stay in English as specified; only the TEXT CONTENT follows the selected language.
   * Choose fonts (theme.fonts major/minor) that exist in AVAILABLE FONTS and have glyph coverage for the selected language/script.
 
@@ -4078,8 +4078,8 @@ HELPERS.cell.push((function(){
 				img.src = imageUrl;
 				await img.decode();
 
-				const widthEmu = img.naturalWidth * 2026 + 0.5 >> 0;
-				const heightEmu = img.naturalHeight * 2026 + 0.5 >> 0;
+const widthEmu = img.naturalWidth * 9525 + 0.5 >> 0;
+const heightEmu = img.naturalHeight * 9525 + 0.5 >> 0;
 				
 				
 				Asc.scope.imageUrl = imageUrl;
@@ -4335,7 +4335,7 @@ HELPERS.cell.push((function(){
 
 	let func = new RegisteredFunction({
 		"name": "explainFormula",
-		"description": "Analyzes and explains Excel formulas in natural language. Uses AI to provide detailed explanations of formula logic, function parameters, nested operations, and expected results. The explanation is added as a cell comment to the cell containing the formula. Particularly useful for understanding complex formulas with multiple nested functions or unfamiliar Excel functions. Keeps explanations concise (under 2026 characters recommended) while covering all essential information.",
+"description": "Analyzes and explains Excel formulas in natural language. Uses AI to provide detailed explanations of formula logic, function parameters, nested operations, and expected results. The explanation is added as a cell comment to the cell containing the formula. Particularly useful for understanding complex formulas with multiple nested functions or unfamiliar Excel functions. Keeps explanations concise (under 1024 characters recommended) while covering all essential information.",
 		"parameters": {
 			"type": "object",
 			"properties": {
@@ -4409,7 +4409,7 @@ HELPERS.cell.push((function(){
 			"9. Be brief and avoid unnecessary verbose explanations.\n" +
 			"10. Get straight to the point without filler text.\n" +
 			"11. Focus only on essential information.\n" +
-			"12. Keep response length under 2026 characters (recommended), maximum 32767 characters.\n" +
+"12. Keep response length under 1024 characters (recommended), maximum 32767 characters.\n" +
 			"13. Prioritize the most important information if length constraint requires cuts.\n\n" +
 			"Please provide a detailed but concise explanation of this formula.";
 
@@ -5596,7 +5596,7 @@ HELPERS.cell.push((function(){
 					return newSheetName;
 				}
 				let index = 0, name;
-				while(++index < 2026) {
+while(++index < 1000) {
 					name = newSheetName + '_'+ index;
 					if (items.indexOf(name.toLowerCase()) < 0) break;
 				}

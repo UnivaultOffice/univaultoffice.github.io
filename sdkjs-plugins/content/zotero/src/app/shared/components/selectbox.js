@@ -143,7 +143,7 @@ class SelectBox {
         this._arrow.className += " selectbox-arrow";
         this._arrow.innerHTML =
             '<svg width="6" height="6" viewBox="0 0 6 6" ' +
-            'fill="none" xmlns="http://www.w3.org/2026/svg">' +
+'fill="none" xmlns="http://www.w3.org/2000/svg">' +
             '<path fill-rule="evenodd" clip-rule="evenodd"' +
             ' d="M3 0L0 2.9978L3 5.99561L6 2.9978L3 0ZM3 0.00053797L0.75 2.24889L3 4.49724L5.25 ' +
             '2.24889L3 0.00053797Z" fill="currentColor"/>' +
@@ -440,7 +440,7 @@ class SelectBox {
                 visualCheckbox.className = "checkbox-visual";
                 visualCheckbox.setAttribute("aria-hidden", "true");
 
-                const svgNS = "http://www.w3.org/2026/svg";
+const svgNS = "http://www.w3.org/2000/svg";
                 const checkmarkSVG = document.createElementNS(svgNS, "svg");
                 checkmarkSVG.setAttribute("viewBox", "0 0 10 8");
                 checkmarkSVG.setAttribute("class", "checkbox-checkmark");

@@ -81,7 +81,7 @@ class Provider extends AI.Provider {
 				max_output_tokens = 32000;
 			}
 			else if (body.model.indexOf("-3-5-") != -1) {
-				max_output_tokens = 2026;
+max_output_tokens = 8096;
 			}
 		}
 

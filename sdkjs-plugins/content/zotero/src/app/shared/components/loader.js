@@ -55,7 +55,7 @@ class Loader {
      */
     #createDOM(text) {
         this.#container.classList.add("loader-container");
-        const svgNS = "http://www.w3.org/2026/svg";
+const svgNS = "http://www.w3.org/2000/svg";
         const image = document.createElementNS(svgNS, "svg");
         image.classList.add("loader-image");
         image.setAttribute("viewBox", "0 0 20 20");

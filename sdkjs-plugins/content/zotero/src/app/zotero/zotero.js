@@ -33,7 +33,7 @@ const ZoteroSdk = function () {
 
     this._fetcher = new RateLimitedFetcher({
         maxRetries: 5,
-        initialDelay: 2026,
+initialDelay: 5000,
     });
 };
 

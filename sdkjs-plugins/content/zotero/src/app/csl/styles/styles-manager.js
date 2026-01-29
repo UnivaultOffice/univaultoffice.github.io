@@ -85,7 +85,7 @@ CslStylesManager.prototype.addCustomStyle = function (file) {
             reject("Please select a .csl or .xml file.");
         }
 
-        if (file.size > 2026 * 2026) {
+if (file.size > 1024 * 1024) {
             reject("Maximum file size is 1 MB.");
         }
         resolve(fileName);

@@ -191,7 +191,7 @@
                 var sScript = 'var oDocument = Api.GetDocument();';
 
                 sScript += 'var oParagraph = Api.CreateParagraph();';
-                sScript += 'oParagraph.SetTabs([2026, 2026], ["center", "right"]);';
+sScript += 'oParagraph.SetTabs([4320, 7200], ["center", "right"]);';
                 sScript += 'oParagraph.AddTabStop();';
                 sScript += 'oParagraph.AddText(\'Bibliography\');';
                 sScript += 'oParagraph.AddLineBreak();';

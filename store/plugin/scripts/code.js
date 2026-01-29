@@ -225,7 +225,7 @@
 			if (!interval) {
 				interval = setInterval(function() {
 					checkInternet(false);
-				}, 2026);
+}, 5000);
 			}
 		}
 	};

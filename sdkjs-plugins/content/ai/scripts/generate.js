@@ -363,8 +363,8 @@ Used for entering dates.
 
 **Example:**
 \`\`\`
-Date of Birth: {FIELD:type='date',value:'01.01.2026',key='birthdate'}
-Signing Date: {FIELD:type='date',value:'10.11.2026',key='signdate'}
+Date of Birth: {FIELD:type='date',value:'01.01.2000',key='birthdate'}
+Signing Date: {FIELD:type='date',value:'10.11.2025',key='signdate'}
 \`\`\`
 
 ## Rules for Using Keys
@@ -416,7 +416,7 @@ For radio buttons, always use the same \`groupKey\` for all options of the same 
 
 **Full Name:** {FIELD:type='textbox',placeholder:'John Smith',key='fullname'}
 
-**Date of Birth:** {FIELD:type='date',value:'01.01.2026',key='birthdate'}
+**Date of Birth:** {FIELD:type='date',value:'01.01.1990',key='birthdate'}
 
 **Gender:**
 - {FIELD:type='radiobutton',checked='true',key='gender_m',groupKey='gender',text='Male'}
@@ -439,7 +439,7 @@ For radio buttons, always use the same \`groupKey\` for all options of the same 
 
 ---
 
-**Date Completed:** {FIELD:type='date',value:'10.11.2026',key='fill_date'}
+**Date Completed:** {FIELD:type='date',value:'10.11.2025',key='fill_date'}
 
 **Signature:** {FIELD:type='textbox',placeholder:'Full name',key='fullname'}
 \`\`\`

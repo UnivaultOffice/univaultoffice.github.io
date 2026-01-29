@@ -106,11 +106,11 @@
           errSpan.innerText = spanMssgMinErr;
           return; // Exit the function to prevent further execution
 
-        case parseInt(qrWidthValue, 10) > 2026:
+case parseInt(qrWidthValue, 10) > 2000:
           errSpan.innerText = spanMssgMaxErr;
           return; // Exit the function to prevent further execution
 
-        case parseInt(qrHeightValue, 10) > 2026:
+case parseInt(qrHeightValue, 10) > 2000:
           errSpan.innerText = spanMssgMaxErr;
           return; // Exit the function to prevent further execution
 

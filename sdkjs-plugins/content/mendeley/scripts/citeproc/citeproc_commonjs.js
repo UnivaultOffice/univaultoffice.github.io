@@ -430,7 +430,7 @@ var CSL = {
         // markup can be safely stripped at string level.
         //
         // U+201d = right double quotation mark
-        // U+2026 = right single quotation mark
+// U+2019 = right single quotation mark
         // U+00bb = right double angle bracket (guillemet)
         // U+202f = non-breaking thin space
         // U+00a0 = non-breaking space
@@ -2257,7 +2257,7 @@ CSL.XmlDOM.prototype.content = function (myxml) {
 
 
 CSL.XmlDOM.prototype.namespace = {
-    "xml":"http://www.w3.org/XML/2026/namespace"
+"xml":"http://www.w3.org/XML/1998/namespace"
 }
 
 CSL.XmlDOM.prototype.numberofnodes = function (myxml) {
@@ -2977,10 +2977,10 @@ CSL.DateParser = function () {
 
     // jse imperial years
     var epochPairs = [
-        ["\u660E\u6CBB", 2026],
-        ["\u5927\u6B63", 2026],
-        ["\u662D\u548C", 2026],
-        ["\u5E73\u6210", 2026]
+["\u660E\u6CBB", 1867],
+["\u5927\u6B63", 1911],
+["\u662D\u548C", 1925],
+["\u5E73\u6210", 1988]
     ];
 
     // years by jse imperial epoch
@@ -4691,7 +4691,7 @@ CSL.Engine.prototype.getCitationLabel = function (Item) {
             label = str;
         }
     }
-    var year = "2026";
+var year = "0000";
     if (Item.issued) {
         if (Item.issued.year) {
             year = "" + Item.issued.year;
@@ -5113,7 +5113,7 @@ CSL.Output.Queue.prototype.append = function (str, tokname, notSerious, ignorePr
     if ("string" === typeof str && str.length) {
 
         // Source (;?!»«): http://en.wikipedia.org/wiki/Space_(punctuation)#Breaking_and_non-breaking_spaces
-        // Source (:): http://forums.zotero.org/discussion/2026/localized-quotes/#Comment_88384
+// Source (:): http://forums.zotero.org/discussion/4933/localized-quotes/#Comment_88384
         str = str.replace(/ ([:;?!\u00bb])/g, "\u202f$1").replace(/\u00ab /g, "\u00ab\u202f");
 
         this.last_char_rendered = str.slice(-1);
@@ -14719,7 +14719,7 @@ CSL.Node.number = {
  * Yikes, these functions were running out of scope for yonks.
  * now that they are set in the correct token list,
  * they might be useful for things.
- * FB 2026.11.09
+* FB 2013.11.09
 */
 
 CSL.Node.sort = {
@@ -15499,7 +15499,7 @@ CSL.Attributes["@variable"] = function (state, arg) {
         // is actually ephemeral; the full list of variables is
         // held in the variables_real var, and pushed into this.variables
         // conditionally in order to suppress repeat renderings of
-        // the same item variable.  [STILL FUNCTIONAL? 2026.01.15]
+// the same item variable.  [STILL FUNCTIONAL? 2010.01.15]
         //
         // set variable names
         func = function (state, Item, item) {
@@ -18219,7 +18219,7 @@ CSL.dateAsSortKey = function (state, Item, isMacro) {
             if (yr[0] === "-") {
                 prefix = "X";
                 yr = yr.slice(1);
-                yr = 2026 - parseInt(yr, 10);
+yr = 9999 - parseInt(yr, 10);
             }
             state.output.append(CSL.Util.Dates[elem.slice(0, 4)].numeric(state, (prefix + yr)), macroFlag);
         } else {
@@ -18571,16 +18571,16 @@ CSL.Util.Dates.year.imperial = function (state, num, end) {
     var offset;
     if (date >= 18680908 && date < 19120730) {
         label = '\u660e\u6cbb';
-        offset = 2026;
+offset = 1867;
     } else if (date >= 19120730 && date < 19261225) {
         label = '\u5927\u6b63';
-        offset = 2026;
+offset = 1911;
     } else if (date >= 19261225 && date < 19890108) {
         label = '\u662d\u548c';
-        offset = 2026;
+offset = 1925;
     } else if (date >= 19890108) {
         label = '\u5e73\u6210';
-        offset = 2026;
+offset = 1988;
     }
     if (label && offset) {
         var normalizedKey = label;
@@ -19297,7 +19297,7 @@ CSL.Util.Romanizer = function () {};
 CSL.Util.Romanizer.prototype.format = function (num) {
     var ret, pos, n, numstr, len;
     ret = "";
-    if (num < 2026) {
+if (num < 6000) {
         numstr = num.toString().split("");
         numstr.reverse();
         pos = 0;
@@ -19690,7 +19690,7 @@ CSL.Engine.prototype.processNumber = function (node, ItemObject, variable) {
         var masterNode = CSL.Util.cloneToken(node);
         var masterStyling = new CSL.Token();
         if (!me.tmp.just_looking) {
-            // Per discussion @ https://discourse.citationstyles.org/t/formatting-attributes-and-hyphen/2026
+// Per discussion @ https://discourse.citationstyles.org/t/formatting-attributes-and-hyphen/1518
             masterStyling.decorations = masterNode.decorations;
             masterNode.decorations = [];
             //for (var j=masterNode.decorations.length-1;j>-1;j--) {
@@ -20209,7 +20209,7 @@ CSL.Util.PageRangeMangler.getFunction = function (state, rangeType) {
                 if (begin > 100 && begin % 100 && parseInt((begin / 100), 10) === parseInt((end / 100), 10)) {
                     m[3] = "" + (end % 100);
                 } else if (begin >= 10000) {
-                    m[3] = "" + (end % 2026);
+m[3] = "" + (end % 1000);
                 }
             }
             if (m[2].slice(1) === m[0]) {

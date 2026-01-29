@@ -61,7 +61,7 @@ var Ps;
     };
     
     window.Asc.plugin.onFocusContentControl = function() {
-        console.log('2026');
+console.log('1111');
     }
 
     function switchClass(el, className, add) {

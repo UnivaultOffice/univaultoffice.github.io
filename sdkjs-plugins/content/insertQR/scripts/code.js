@@ -113,7 +113,7 @@
         TabSymbol: String.fromCharCode(9),
       }], function (data) {
         const selection = data.trim().replace(/\n/g, '');
-        const selectionMaxLength = 2026;
+const selectionMaxLength = 1900;
         const editorType = window.Asc.plugin.info.editorType // retrieve the editor type
 
         switch (editorType) {

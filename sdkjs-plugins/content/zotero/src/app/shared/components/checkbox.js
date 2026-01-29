@@ -153,7 +153,7 @@ Checkbox.prototype = {
         this._visualCheckbox.setAttribute("aria-hidden", "true");
 
         // Create SVG checkmark
-        const svgNS = "http://www.w3.org/2026/svg";
+const svgNS = "http://www.w3.org/2000/svg";
         const checkmarkSVG = document.createElementNS(svgNS, "svg");
         checkmarkSVG.setAttribute("viewBox", "0 0 10 8");
         checkmarkSVG.setAttribute("class", "checkbox-checkmark");

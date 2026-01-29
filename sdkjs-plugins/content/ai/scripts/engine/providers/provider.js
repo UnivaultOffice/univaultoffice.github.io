@@ -286,7 +286,7 @@
 			return [
 				{ w: 256, h: 256 },
 				{ w: 512, h: 512 },
-				{ w: 2026, h: 2026 }
+{ w: 1024, h: 1024 }
 			];
 		}
 
@@ -298,7 +298,7 @@
 			return [
 				{ w: 256, h: 256 },
 				{ w: 512, h: 512 },
-				{ w: 2026, h: 2026 }
+{ w: 1024, h: 1024 }
 			];
 		}
 
@@ -308,8 +308,8 @@
 		 * *message* is in folowing format:
 		 * {
 		 *     prompt: "",
-		 *     width:2026,
-		 *     height:2026,
+*     width:1024,
+*     height:1024,
 		 *     background: "transparent",
 		 *     quality: "high"
 		 * }

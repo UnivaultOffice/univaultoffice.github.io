@@ -505,7 +505,7 @@ function checkInternetExplorer(){
 
             RunTranslate(txt);
             
-        }, 2026));
+}, 1000));
     });
 
     function updateScroll()

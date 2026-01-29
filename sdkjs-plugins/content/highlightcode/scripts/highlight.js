@@ -439,7 +439,7 @@
 				return;
 			}
 			clearTimeout(timer);
-			timer = setTimeout(grab,2026);
+timer = setTimeout(grab,1000);
 		});
 
 		function grab() {
